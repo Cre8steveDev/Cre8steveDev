@@ -3,7 +3,7 @@
  * @returns JSX
  */
 // Import Packages or Libraries
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import GlassMorphism from "./GlassMorphism/GlassMorphism";
 import SocialLinks from "./components/SocialLinks.jsx";
@@ -11,8 +11,6 @@ import SocialLinks from "./components/SocialLinks.jsx";
 function App() {
   const [scrollY, setScrollY] = useState(0);
   const [glassMorphism, setGlassMorphism] = useState(true);
-
-  useEffect(() => console.log(scrollY), [scrollY]);
 
   //  Define Dynamic Class for App Container
   const bgImage = glassMorphism
