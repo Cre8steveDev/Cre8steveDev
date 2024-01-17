@@ -14,21 +14,21 @@ function App() {
 
   //  Define Dynamic Class for App Container
   const bgImage = glassMorphism
-    ? `flex flex-col  items-center w-full h-screen  
-    bg-[url('images/background_2.jpg')] bg-cover overflow-hidden`
-    : `flex flex-col  items-center w-full h-screen  
-    bg-[url('images/background.jpg')] bg-cover overflow-hidden`;
+    ? `images/background_2.jpg`
+    : `images/background.jpg`;
 
   // Return to DOM
 
   return (
     <motion.div
-      id="Main App Body Component"
+      id="MainAppBody"
       style={{
-        background: "url(images/background_2.jpg)",
-        backgrounSize: "Cover",
+        background: `url(${bgImage})`,
+        // backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundRepeat: "revert",
       }}
-      className="flex flex-col  items-center w-full h-screen bg-cover overflow-hidden"
+      className="flex flex-col  items-center w-full h-screen overflow-hidden"
     >
       {glassMorphism && <GlassMorphism setScrollY={setScrollY} />}
 
