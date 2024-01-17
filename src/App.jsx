@@ -22,7 +22,14 @@ function App() {
   // Return to DOM
 
   return (
-    <motion.div id="Main App Body Component" className={bgImage}>
+    <motion.div
+      id="Main App Body Component"
+      style={{
+        background: "url(images/background_2.jpg)",
+        backgrounSize: "Cover",
+      }}
+      className="flex flex-col  items-center w-full h-screen bg-cover overflow-hidden"
+    >
       {glassMorphism && <GlassMorphism setScrollY={setScrollY} />}
 
       {!glassMorphism && <div>Another Design</div>}
