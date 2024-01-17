@@ -20,6 +20,7 @@ function App() {
     bg-[url('images/background.jpg')] bg-cover overflow-hidden`;
 
   // Return to DOM
+
   return (
     <motion.div id="Main App Body Component" className={bgImage}>
       {glassMorphism && <GlassMorphism setScrollY={setScrollY} />}
@@ -27,9 +28,9 @@ function App() {
       {!glassMorphism && <div>Another Design</div>}
 
       {/* Interactivity */}
-      <div className="w-[40px] absolute top-40 right-3">
+      <div className=" hidden sm:block w-[30px] sm:w-[40px] absolute top-40 right-3">
         {/* Scroll Progress Bar */}
-        <div className="h-[300px] bg-black bg-opacity-35 rounded-2xl overflow-hidden">
+        <div className="h-[250px] sm:h-[300px] bg-black bg-opacity-35 rounded-2xl overflow-hidden">
           <motion.section
             initial={{ height: "0%" }}
             animate={{

@@ -22,7 +22,7 @@ const GlassMorphism = ({ setScrollY }) => {
           <Route
             index
             element={
-              <div>
+              <div className="">
                 <HeroPage setScrollY={setScrollY} />
                 <Skills setScrollY={setScrollY} />
                 <Portfolio setScrollY={setScrollY} />

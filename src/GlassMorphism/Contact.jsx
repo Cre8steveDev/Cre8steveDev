@@ -45,8 +45,8 @@ const Contact = ({ setScrollY }) => {
       className="w-full h-screen snap-center min-h-screen overflow-y-scroll flex flex-col justify-center relative overflow-x-hidden "
     >
       {/*  */}
-      <div className="flex flex-col  bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl gap-4 p-6 text-center mt-12 items-center text-darkNeutral">
-        <h2 className="tracking-[0.6rem]">
+      <div className="flex flex-col  bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl gap-4 p-6 text-center sm:mt-12 mt-[580px] items-center text-darkNeutral">
+        <h2 className="tracking-[0.6rem] sm:text-inherit text-sm">
           READY TO BUILD SOMETHING SPECTACULAR?
         </h2>
 
@@ -83,7 +83,10 @@ const Contact = ({ setScrollY }) => {
               // ref={form}
             >
               {/* Enter details of the form  */}
-              <label htmlFor="name" className="font-bold mb-2 w-full text-sm">
+              <label
+                htmlFor="name"
+                className="font-bold mb-2 w-full text-xs sm:text-sm"
+              >
                 May I know Your Name?
               </label>
               <input
@@ -96,7 +99,10 @@ const Contact = ({ setScrollY }) => {
                 className=" w-full p-2 mb-2 bg-darkNeutral text-darkBlue focus:outline-none focus:rounded-lg focus:shadow-4xl focus:bg-white transition duration-200 ease-in"
               />
               {/*  */}
-              <label htmlFor="email" className="font-bold mb-2 w-full text-sm">
+              <label
+                htmlFor="email"
+                className="font-bold mb-2 w-full text-xs sm:text-sm"
+              >
                 Enter Email Address Below!
               </label>
               <input
@@ -111,7 +117,7 @@ const Contact = ({ setScrollY }) => {
               {/*  */}
               <label
                 htmlFor="message"
-                className="font-bold mb-2 w-full text-sm"
+                className="font-bold mb-2 w-full text-xs sm:text-sm"
               >
                 Alrighty! Be a poet, write something nice!
               </label>
@@ -137,7 +143,9 @@ const Contact = ({ setScrollY }) => {
             {/*  */}
           </div>
         </div>
-        <p>Designed & Developed by Cre8Steve Dev (Stephen Omoregie)</p>
+        <pc className="sm:text-inherit text-xs ">
+          Designed & Developed by Cre8Steve Dev (Stephen Omoregie)
+        </pc>
       </div>
     </div>
   );

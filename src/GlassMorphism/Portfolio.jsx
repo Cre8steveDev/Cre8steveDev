@@ -56,9 +56,9 @@ const Portfolio = ({ setScrollY }) => {
       className="w-full h-screen snap-center min-h-screen overflow-y-scroll flex flex-col justify-center relative overflow-x-hidden "
     >
       {/*  */}
-      <div className="flex flex-col  bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl gap-4 p-6 text-center mt-12 items-center text-darkNeutral sm:w-[90%] lg:w-full">
-        <h2 className="tracking-[0.6rem]">MY PORTFOLIO</h2>
-        <p className="max-w-2xl text-md">
+      <div className="flex flex-col  bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl gap-4 p-6 text-center sm:mt-12 items-center text-darkNeutral sm:w-[90%] lg:w-full mt-[1000px]">
+        <h2 className="tracking-[0.6rem] mt-[100px] sm:mt-0">MY PORTFOLIO</h2>
+        <p className="max-w-2xl text-sm sm:text-md">
           Here are some of my featured projects showcasing my experience as a
           professional Web Developer with a versatile skills in programming,
           problem-solving, design and more.

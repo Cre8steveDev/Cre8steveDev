@@ -36,23 +36,25 @@ const Skills = ({ setScrollY }) => {
     <div
       id="skills"
       ref={ref}
-      className="w-full h-screen snap-center min-h-screen overflow-y-scroll flex flex-col justify-center relative overflow-x-hidden "
+      className="w-full h-screen snap-center min-h-screen overflow-y-scroll flex flex-col justify-center relative overflow-x-hidden"
     >
       {/*  */}
-      <div className="flex flex-col  bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl gap-4 p-6 text-center mt-12 items-center text-darkNeutral tracking-[0.6rem] sm:w-[90%] lg:w-full">
-        <p>MY PROFESSIONAL STACK</p>
+      <div className="flex flex-col  bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl gap-4 p-6 text-center mt-[300px] sm:mt-12 items-center text-darkNeutral tracking-[0.6rem] sm:w-[90%] lg:w-full">
+        <p className="text-xs sm:text-inherit mt-5 sm:mt-0">
+          MY PROFESSIONAL STACK
+        </p>
 
         {/* Skills Container  */}
         <div
           role="Skills"
-          className="flex flex-wrap gap-6 max-w-4xl justify-center my-5"
+          className="flex flex-wrap gap-6 max-w-4xl justify-center my-5 sm:w-[90%]"
         >
           {
             // Iterate through array to render the skills icons
             mySkills.map((skill, idx) => (
               <motion.div
                 key={idx}
-                className="max-w-[120px] max-h-[120px] bg-white rounded-lg object-cover p-4 flex"
+                className="max-w-[80px] max-h-[80px] sm:max-w-[120px] sm:max-h-[120px] bg-white rounded-lg object-cover p-4 flex"
                 initial={{ scale: 1, opacity: 1 }}
                 whileHover={{
                   scale: 0.8,

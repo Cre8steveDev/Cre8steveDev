@@ -18,7 +18,7 @@ const Resume = ({ setScrollY }) => {
       className="w-full h-screen snap-center min-h-screen overflow-y-scroll flex flex-col justify-center relative overflow-x-hidden "
     >
       {/*  */}
-      <div className="flex flex-col  bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl gap-4 p-6 text-center mt-12 items-center sm:w-[90%] lg:w-full">
+      <div className="flex flex-col  bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl gap-4 p-6 text-center mt-[400px] sm:mt-12 items-center sm:w-[90%] lg:w-full">
         <p className="text-darkNeutral tracking-[0.6rem]">
           PROFESSIONAL SUMMARY
         </p>
@@ -28,13 +28,13 @@ const Resume = ({ setScrollY }) => {
           role="container"
           className="flex flex-col md:flex-row justify-center items-center w-full p-4"
         >
-          <div className="flex flex-col w-full">
+          <div className="flex flex-col w-full sm:mb-0 mb-5">
             <img
               src="images/hero_pic.png"
               alt="Profile Pic"
-              className="rounded-full bg-slate-500 w-[150px] h-[150px]object-cover mx-auto"
+              className="rounded-full bg-slate-500 sm:w-[150px] sm:h-[150px] w-[80px] h-[90px] object-cover mx-auto"
             />
-            <div className="font-extrabold text-4xl text-darkNeutral">
+            <div className="font-extrabold text-2xl sm:text-4xl text-darkNeutral">
               <p className="w-full">Stephen</p>
               <p className="w-full">Omoregie</p>
             </div>
@@ -47,7 +47,9 @@ const Resume = ({ setScrollY }) => {
             <p className="font-medium text-sm text-darkNeutral">
               Designer (Graphic and UI)
             </p>
-            <p className="font-bold text-darkNeutral mb-6">Video Editor</p>
+            <p className="font-medium text-sm text-darkNeutral mb-6">
+              Video Editor
+            </p>
 
             {/* Download Button */}
             <input
@@ -58,7 +60,7 @@ const Resume = ({ setScrollY }) => {
           </div>
 
           {/* RIGHT HAND SIDE */}
-          <div className="flex flex-col w-full text-left gap-5 text-darkNeutral ">
+          <div className="flex flex-col w-full  text-center sm:text-left gap-5 text-darkNeutral ">
             <section>
               <p className="font-bold">Education</p>
               <h2 className="font-extrabold text-white">

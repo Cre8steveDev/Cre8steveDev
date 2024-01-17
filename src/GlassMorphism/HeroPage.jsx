@@ -19,30 +19,32 @@ const HeroPage = ({ setScrollY }) => {
       className="w-full h-screen snap-center min-h-screen overflow-y-scroll flex flex-col justify-center relative overflow-x-hidden"
     >
       {/*  */}
-      <div className="flex flex-col-reverse sm:flex-col md:flex-row bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl sm:w-[90%] lg:w-full">
+      <div className="flex flex-col-reverse sm:flex-col md:flex-row bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl sm:w-[90%] lg:w-full ">
         <div className="w-full object-cover self-end">
           <img
             src="images/hero_pic.png"
             alt="Stephen Omoregie"
-            className="w-[80%] sm:w-full"
+            className="w-[80%] sm:w-full mx-auto sm:mx-0"
           />
         </div>
-        <div className="w-full flex flex-col justify-center p-3">
-          <div className="w-full text-6xl font-extrabold mb-4">
+
+        {/* Text Container  */}
+        <div className="w-full flex flex-col justify-center items-center p-3">
+          <div className="w-full text-center text-4xl  md:text-left md:text-5xl lg:text-6xl font-extrabold mb-4 mt-[200px] sm:mt-0">
             <p className="w-full text-darkBrown">CREATIVE</p>
             <p className="w-full text-darkNeutral">MERN STACK</p>
             <p className="w-full text-darkBrown">DEVELOPER</p>
           </div>
 
           {/* Short introduction */}
-          <p className="text-xl text-darkNeutral mb-4">
+          <p className="text-center sm:text-left sm:text-xl text-darkNeutral mb-4 w-[90%] sm:w-full">
             Stephen is a highly-motivated <b>Full Stack Web Developer</b>{" "}
             passionate about building performant and scalable web applications
             with modern and intuitive user interfaces.
           </p>
 
           {/* Call to Action Button */}
-          <div className="flex">
+          <div className="flex justify-center sm:justify-normal">
             <a href="#portfolio">
               <input
                 type="submit"
