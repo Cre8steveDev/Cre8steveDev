@@ -44,7 +44,7 @@ const HeroPage = ({ setScrollY }) => {
           </p>
 
           {/* Call to Action Button */}
-          <div className="flex justify-center sm:justify-normal">
+          <div className="flex justify-center sm:justify-items-start sm:self-start self-center">
             <a href="#portfolio">
               <input
                 type="submit"

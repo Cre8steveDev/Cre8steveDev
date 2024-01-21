@@ -18,7 +18,7 @@ const myProjects = [
     description:
       "My Portfolio Website created with a passion for creating User-friendly and intuitive Interfaces that adequately represents my Skills as a proficient Full Stack Developer.",
     tools: ["ReactJS", "Framer Motion", "Tailwind"],
-    name: "Cre8Steve.com",
+    name: "Cre8Stevedev.me",
     link: "portfolio",
   },
 

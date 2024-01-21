@@ -26,7 +26,6 @@ function App() {
         background: `url(${bgImage})`,
         // backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        backgroundRepeat: "revert",
       }}
       className="flex flex-col  items-center w-full h-screen overflow-hidden"
     >
@@ -35,9 +34,9 @@ function App() {
       {!glassMorphism && <div>Another Design</div>}
 
       {/* Interactivity */}
-      <div className=" hidden sm:block w-[30px] sm:w-[40px] absolute top-40 right-3">
+      <div className=" hidden sm:block w-[30px] sm:w-[40px] absolute top-32 right-3">
         {/* Scroll Progress Bar */}
-        <div className="h-[250px] sm:h-[300px] bg-black bg-opacity-35 rounded-2xl overflow-hidden">
+        <div className="h-[250px] sm:h-[200px] bg-black bg-opacity-35 rounded-2xl overflow-hidden">
           <motion.section
             initial={{ height: "0%" }}
             animate={{
@@ -55,8 +54,8 @@ function App() {
         {/* Trigger website Design Type */}
         <input
           type="button"
-          value={"Try This!"}
-          className="-rotate-90 mt-10  -ml-3 bg-darkBlue text-darkNeutral p-2 text-xs font-bold hover:bg-darkBrown transition ease-in rounded-xl"
+          value={glassMorphism ? "Designer Site" : "Developer Site"}
+          className="-rotate-90 mt-10 -ml-7 bg-yellow-700 text-darkNeutral p-2 text-xs font-bold hover:bg-darkBrown transition ease-in rounded-xl"
           onClick={() => setGlassMorphism(!glassMorphism)}
         />
 

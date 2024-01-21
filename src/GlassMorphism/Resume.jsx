@@ -55,7 +55,7 @@ const Resume = ({ setScrollY }) => {
             <input
               type="button"
               value={"DOWNLOAD RESUME"}
-              className="p-3 bg-darkNeutral backdrop-blur-3xl w-full max-w-[300px] mx-auto rounded-lg cursor-pointer active:animate-ping hover:bg-white hover:text-darkBlue transition ease-in animate-pulse"
+              className="p-3 bg-darkNeutral backdrop-blur-3xl w-full max-w-[80%] mx-auto rounded-lg cursor-pointer active:animate-ping hover:bg-white hover:text-darkBlue transition ease-in animate-pulse"
             />
           </div>
 

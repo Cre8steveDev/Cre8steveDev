@@ -136,16 +136,16 @@ const Contact = ({ setScrollY }) => {
               <input
                 type="submit"
                 value={"SEND MESSSAGE"}
-                className=" w-full p-2  bg-darkBlue font-bold hover:bg-darkBrown hover:text-darkBlue transition ease-out duration-300 hover:rounded-xl shadow-2xl active:scale-75"
+                className=" w-full p-2  bg-darkBlue font-bold hover:bg-darkBrown hover:text-darkBlue transition ease-out duration-300 hover:rounded-xl shadow-2xl active:scale-75 sm:text-left"
               />
             </form>
 
             {/*  */}
           </div>
         </div>
-        <pc className="sm:text-inherit text-xs ">
+        <div className="sm:text-inherit text-xs ">
           Designed & Developed by Cre8Steve Dev (Stephen Omoregie)
-        </pc>
+        </div>
       </div>
     </div>
   );
