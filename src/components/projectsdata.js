@@ -2,7 +2,7 @@ const projectsdata = [
   {
     projName: "Green Shopper eCommerce",
     id: "greenshopper",
-    imgUrl: "projects/greenshopper_big.png",
+    imgUrl: "/projects/greenshopper_big.png",
     liveUrl: "dummyurl.com",
     stacks: ["ReactJS", "ExpressJS", "MongoDB", "TailwindCSS"],
     projDescription:
@@ -12,7 +12,7 @@ const projectsdata = [
   {
     projName: "Cre8Stevedev.me - Portfolio",
     id: "portfolio",
-    imgUrl: "projects/portfolio_big.png",
+    imgUrl: "/projects/portfolio_big.png",
     liveUrl: "dummyurl.com",
     stacks: ["ReactJS", "Framer Motion", "TailwindCSS"],
     projDescription:
@@ -22,7 +22,7 @@ const projectsdata = [
   {
     projName: "Healthor - AI Chat Diagnosis",
     id: "healthor",
-    imgUrl: "projects/healthor_big.png",
+    imgUrl: "/projects/healthor_big.png",
     liveUrl: "",
     stacks: ["ReactJS", "OpenAI", "Google Maps"],
     projDescription:
