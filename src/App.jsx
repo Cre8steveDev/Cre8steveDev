@@ -68,12 +68,14 @@ function App() {
         <SocialLinks />
 
         {/* Trigger website Design Type */}
-        <input
-          type="button"
-          value={glassMorphism ? "Random Quote" : "Back to Me!"}
-          className="-rotate-90 mt-10 -ml-9 bg-red-700 text-darkNeutral p-2 text-xs sm:text-sm font-extrabold hover:bg-darkBrown transition ease-in rounded-xl"
-          onClick={() => setGlassMorphism(!glassMorphism)}
-        />
+        {!viewingProduct && (
+          <input
+            type="button"
+            value={glassMorphism ? "Random Quote" : "Back to Me!"}
+            className="-rotate-90 mt-10 -ml-9 bg-red-700 text-darkNeutral p-2 text-xs sm:text-sm font-extrabold hover:bg-darkBrown transition ease-in rounded-xl"
+            onClick={() => setGlassMorphism(!glassMorphism)}
+          />
+        )}
 
         {/* Go To Top */}
         {scrollY > 0 && !viewingProduct && (

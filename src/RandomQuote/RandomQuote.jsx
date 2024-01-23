@@ -59,8 +59,8 @@ const RandomQuote = () => {
         .toPng(quoteRef.current, {
           quality: 1,
           filter: (node) => node !== copyRef.current,
-          height: quoteRef.current.offsetHeight * 2,
-          width: quoteRef.current.offsetWidth * 2,
+          //   height: quoteRef.current.offsetHeight * 2,
+          //   width: quoteRef.current.offsetWidth * 2,
         })
         .then(function (dataUrl) {
           let link = document.createElement("a");
