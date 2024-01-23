@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import GlassMorphism from "./GlassMorphism/GlassMorphism";
 import SocialLinks from "./components/SocialLinks.jsx";
+import RandomQuote from "./RandomQuote/RandomQuote.jsx";
 
 function App() {
   const [scrollY, setScrollY] = useState(0);
@@ -43,14 +44,14 @@ function App() {
         />
       )}
 
-      {!glassMorphism && <div>Another Design</div>}
+      {!glassMorphism && <RandomQuote />}
 
       {/* Interactivity */}
-      <div className=" hidden sm:block w-[30px] sm:w-[40px] absolute top-32 right-3">
+      <div className=" block w-[30px] sm:w-[40px] absolute top-[440px] sm:top-32 sm:right-3 right-0">
         {/* Scroll Progress Bar */}
 
         {!viewingProduct && (
-          <div className="h-[250px] sm:h-[200px] bg-black bg-opacity-35 rounded-2xl overflow-hidden">
+          <div className="h-[250px] sm:h-[200px] bg-black bg-opacity-35 rounded-2xl overflow-hidden hidden sm:block">
             <motion.section
               initial={{ height: "0%" }}
               animate={{
@@ -69,8 +70,8 @@ function App() {
         {/* Trigger website Design Type */}
         <input
           type="button"
-          value={glassMorphism ? "Designer Site" : "Developer Site"}
-          className="-rotate-90 mt-10 -ml-7 bg-yellow-700 text-darkNeutral p-2 text-xs font-bold hover:bg-darkBrown transition ease-in rounded-xl"
+          value={glassMorphism ? "Random Quote" : "Back to Me!"}
+          className="-rotate-90 mt-10 -ml-9 bg-red-700 text-darkNeutral p-2 text-xs sm:text-sm font-extrabold hover:bg-darkBrown transition ease-in rounded-xl"
           onClick={() => setGlassMorphism(!glassMorphism)}
         />
 
@@ -80,7 +81,7 @@ function App() {
             <input
               type="button"
               value={"=> Top"}
-              className="-rotate-90 mt-14  -ml-1 bg-darkBlue text-darkNeutral p-2 text-xs font-bold hover:bg-darkBrown transition ease-in rounded-xl"
+              className="-rotate-90 mt-14  -ml-1 bg-darkBlue text-darkNeutral p-2 text-xs font-bold hover:bg-darkBrown transition ease-in rounded-xl hidden sm:block"
             />
           </a>
         )}

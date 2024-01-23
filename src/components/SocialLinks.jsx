@@ -43,9 +43,9 @@ const SocialLinks = () => {
       {/* WhatsApp */}
       <a href="https://wa.link/a7mhni" target="_blank" rel="noreferrer">
         <img
-          src="icons/twitter.png"
-          alt="Twitter"
-          title="Say Hi"
+          src="icons/whatsapp.png"
+          alt="Whatsapp"
+          title="Say Hi on Whatsapp"
           className="w-[50px] hover:opacity-85 hover:scale-110 ease-in transition active:scale-50"
         />
       </a>

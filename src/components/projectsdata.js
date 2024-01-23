@@ -18,8 +18,7 @@ const projectsdata = [
       5. Managed product image uploads and storage through Firebase integration.
 
       Backend (ExpressJS & MongoDB):
-      1. Developed secure APIs using ExpressJS for user authentication, authorization, and data management.
-      Secured user data with password hashing using bcryptjs.
+      1. Developed secure APIs using ExpressJS for user authentication, authorization, and data management. Secured user data with password hashing using bcryptjs.
       2. Implemented JSON Web Token (JWT) authentication with cookie-parser for session management.
       3. Established seamless database interaction with Mongoose and MongoDB Atlas.
       4. Honed debugging skills using Postman for API testing and troubleshooting.
@@ -90,9 +89,9 @@ const projectsdata = [
       2. Gained valuable insights into the ethical considerations and challenges of AI-powered healthcare solutions.
       
       Impact & Takeaways:
-      Healthor represents the culmination of my four-year computer science education, showcasing my mastery of diverse technologies and project management skills.The project highlights my innovative approach to using AI for social good and my commitment to addressing healthcare challenges.I gained invaluable experience in working with cutting-edge technology like OpenAI's GPT-3.5, positioning me for a future in AI-driven software solutions.
+      Healthor showcases my understanding of diverse technologies and project management skills.The project highlights my innovative approach to using AI for social good and my commitment to addressing healthcare challenges.I gained invaluable experience in working with cutting-edge technology like OpenAI's GPT-3.5, positioning me for a future in AI-driven software solutions.
 
-      Note: Sadly my access to the OpenAI api has revoke as my starter bonus has expired. So you might not be able to test this powerful application at the moment
+      Note: Sadly, my access to the OpenAI api has been revoked as my starter bonus has expired. So you might not be able to test this powerful application at the moment
       `,
     githubUrl: "https://github.com/Cre8steveDev/Healthor",
   },
