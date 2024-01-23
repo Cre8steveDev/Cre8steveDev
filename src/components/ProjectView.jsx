@@ -62,7 +62,7 @@ githubUrl:
         {/* Description Starts here */}
         <section className="w-full text-left mt-4 text-white bg-black p-4 rounded-lg bg-opacity-30">
           <h2 className="text-center font-extrabold">My Learning Points</h2>
-          <p className="hyphens-auto">{proj.projDescription}</p>
+          <p className="hyphens-auto whitespace-pre">{proj.projDescription}</p>
         </section>
       </div>
     </div>

@@ -16,7 +16,7 @@ const SocialLinks = () => {
       </a>
       {/* GitHub */}
       <a
-        href="https://github.com/Cr8steveDesign"
+        href="https://github.com/Cre8steveDev"
         target="_blank"
         rel="noreferrer"
       >
