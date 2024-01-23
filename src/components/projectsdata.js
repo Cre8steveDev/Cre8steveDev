@@ -28,11 +28,9 @@ const projectsdata = [
       Utilized Figma to design user-friendly and aesthetic interfaces based on Template Cookie's design.Gained valuable UX/UI design skills and confidence in using Figma.
 
       Impact & Takeaways:
-      
       Green Shopper provided me with a comprehensive learning experience encompassing frontend, backend, and design aspects of full-stack development. The project solidified my understanding of core technologies like ReactJS, ExpressJS, MongoDB, and essential libraries like Redux, JWT, and Figma.
       
-      I honed my problem-solving, debugging, and project management skills while navigating development challenges.
-      Green Shopper instilled a passion for building eco-friendly and user-centric applications that empower positive change.`,
+      I honed my problem-solving, debugging, and project management skills while navigating development challenges. Green Shopper instilled a passion for building eco-friendly and user-centric applications that empower positive change.`,
     githubUrl: "https://github.com/Cre8steveDev/GreenShopper",
   },
   {
@@ -46,20 +44,16 @@ const projectsdata = [
       Think of it as a virtual gallery shocasing  projects that represent my growth and learning. Every line of code, every pixel on the screen, tells a story of exploration, experimentation, and pushing boundaries.
       
       My Toolbox:
-      
       While I'm always expanding my skillset, here's what I bring to the table right now:
-      
       1. MERN Stack Master: JavaScript (ES6+), ReactJS, NodeJS, ExpressJS, and MongoDB are my weapons of choice for building dynamic and interactive web applications.
-
       2. Design Savvy: I can whip up user interfaces that are both beautiful and intuitive, using Figma and thanks to my understanding of HTML, CSS, and Tailwind CSS I can transform these designs into pixel-perfect code. ✨
 
       But the Journey Doesn't End Here:
-      
       Currently, I'm honing my skills at Alx Africa, where I'm training to become a Full-Stack Software Engineer with a Specialization in Back End Development. This means diving deeper into:
-      
-      DevOps: Linux, Server Management,CI/CD and the secrets of the cloud are on my radar, empowering me to build and maintain robust web applications. 
 
-      Database Diversification: From the familiar realm of MySQL to the NoSQL wonderland of MongoDB, I'm expanding my database repertoire to handle any data challenge.
+      DevOps: Linux, Server Management, CI/CD and the secrets of the cloud are on my radar, empowering me to build and maintain robust web applications. 
+
+      Database Management: From the familiar realm of MySQL to the NoSQL wonderland of MongoDB, I'm expanding my database repertoire to handle any data challenge.
       
       Python Whisperer: Flask and FastAPI are my next targets, unlocking the flexibility and power of Python for back-end development.
       
@@ -75,7 +69,6 @@ const projectsdata = [
     projDescription: `Healthor is a web-based AI-powered medical diagnosis system designed to enhance access to healthcare and empower individuals to take control of their well-being. It leverages the power of OpenAI's GPT-3.5 Turbo model to provide conversational symptom analysis and potential diagnoses.
 
       Key Learning Points:
-      
       AI Integration:
       1. Successfully integrated OpenAI's GPT-3.5 Turbo model as the core diagnostic engine.
       2. Mastered prompt engineering techniques to guide the AI towards providing informative and patient-friendly responses.
@@ -94,7 +87,6 @@ const projectsdata = [
       2. Gained valuable insights into the ethical considerations and challenges of AI-powered healthcare solutions.
       
       Impact & Takeaways:
-      
       Healthor represents the culmination of my four-year computer science education, showcasing my mastery of diverse technologies and project management skills.The project highlights my innovative approach to using AI for social good and my commitment to addressing healthcare challenges.I gained invaluable experience in working with cutting-edge technology like OpenAI's GPT-3.5, positioning me for a future in AI-driven software solutions.
 
       Note: Sadly my access to the OpenAI api has revoke as my starter bonus has expired. So you might not be able to test this powerful application at the moment

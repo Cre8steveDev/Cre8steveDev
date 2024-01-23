@@ -7,12 +7,17 @@ import Resume from "./Resume.jsx";
 import Contact from "./Contact.jsx";
 import ProjectView from "../components/ProjectView.jsx";
 import { Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
 
 // Additionals will come here
 
 // eslint-disable-next-line react/prop-types
-const GlassMorphism = ({ setScrollY }) => {
+const GlassMorphism = ({ setScrollY, setViewingProduct }) => {
   // Define ref for container
+  useEffect(() => {
+    setViewingProduct(false);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div className="flex flex-col  items-center relative snap-y snap-mandatory w-full md:w-[90%] lg:max-w-screen-lg overflow-y-scroll">
@@ -30,7 +35,10 @@ const GlassMorphism = ({ setScrollY }) => {
             </div>
           }
         />
-        <Route path="project/:param" element={<ProjectView />} />
+        <Route
+          path="project/:param"
+          element={<ProjectView setViewingProduct={setViewingProduct} />}
+        />
         <Route path="*" element={<div>Error</div>} />
       </Routes>
     </div>

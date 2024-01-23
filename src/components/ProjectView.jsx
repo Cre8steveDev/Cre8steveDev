@@ -1,19 +1,20 @@
-import { useParams } from "react-router-dom";
+/* eslint-disable react/prop-types */
+import { useParams, useNavigate } from "react-router-dom";
 import projectsdata from "./projectsdata.js";
+import { useEffect } from "react";
 
-const ProjectView = () => {
+const ProjectView = ({ setViewingProduct }) => {
+  useEffect(() => {
+    setViewingProduct(true);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   const { param } = useParams();
-  /**
-   * 
-id: 
-imgUrl: 
-liveUrl: 
-stacks: 
-projDescription:
-githubUrl: 
-   */
+
+  const projectsArray = ["greenshopper", "portfolio", "healthor"];
+  let currentIndex = projectsArray.indexOf(param);
 
   const proj = projectsdata.find((proj) => proj.id === param);
+  const navigate = useNavigate();
 
   if (!proj)
     return (
@@ -22,6 +23,27 @@ githubUrl:
       </div>
     );
   const stacks = proj.stacks;
+
+  const handlePrevious = () => {
+    // Handle previous logic
+
+    if (!currentIndex) {
+      navigate(`/project/${projectsArray[2]}`);
+    } else {
+      --currentIndex;
+      navigate(`/project/${projectsArray[currentIndex]}`);
+    }
+  };
+
+  const handleNext = () => {
+    // Handle Next Logic
+    if (!currentIndex) {
+      navigate(`/project/${projectsArray[0]}`);
+    } else {
+      ++currentIndex;
+      navigate(`/project/${projectsArray[currentIndex]}`);
+    }
+  };
 
   return (
     <div className="w-full h-screen snap-center min-h-screen overflow-y-scroll flex flex-col justify-center relative overflow-x-hidden ">
@@ -60,9 +82,43 @@ githubUrl:
         </section>
 
         {/* Description Starts here */}
-        <section className="w-full text-left mt-4 text-white bg-black p-4 rounded-lg bg-opacity-30">
+        <section className="w-full text-left mt-4 text-white bg-black p-4 rounded-lg bg-opacity-40">
           <h2 className="text-center font-extrabold">My Learning Points</h2>
-          <p className="hyphens-auto whitespace-pre">{proj.projDescription}</p>
+          <p className="hyphens-auto sm:p-[90px] sm:py-3 sm:text-lg whitespace-pre-line">
+            {proj.projDescription}
+          </p>
+        </section>
+
+        {/* Live Link and Github link here || Next and Previous */}
+        <section className="flex gap-4 mt-4 flex-wrap justify-center items-center">
+          {/* Handle Previous Project View */}
+          <button
+            className="bg-white text-slate-900 p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl"
+            onClick={handlePrevious}
+          >
+            Previous
+          </button>
+          {/* Live project Link */}
+          <a href={proj.liveUrl} target="_blank" rel="noreferrer">
+            <button className="bg-purple-700 p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl">
+              Live Link
+            </button>
+          </a>
+
+          {/* Github Code link */}
+          <a href={proj.githubUrl} target="_blank" rel="noreferrer">
+            <button className="bg-black p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl">
+              View Code on GitHub
+            </button>
+          </a>
+
+          {/* Handle Next Project View */}
+          <button
+            className="bg-white text-slate-900 p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl"
+            onClick={handleNext}
+          >
+            Next
+          </button>
         </section>
       </div>
     </div>
