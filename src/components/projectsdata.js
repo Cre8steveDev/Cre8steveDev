@@ -37,7 +37,7 @@ const projectsdata = [
     projName: "Cre8Stevedev.me - Portfolio",
     id: "portfolio",
     imgUrl: "/projects/portfolio_big.png",
-    liveUrl: "cre8stevedev.me",
+    liveUrl: "https://cre8stevedev.me",
     stacks: ["ReactJS", "Framer Motion", "TailwindCSS"],
     projDescription: `Welcome to Cre8stevedev.me, my online playground where I showcase my journey as a passionate Full-Stack Web Developer!
 
@@ -45,7 +45,7 @@ const projectsdata = [
       
       My Toolbox:
       While I'm always expanding my skillset, here's what I bring to the table right now:
-      1. MERN Stack Master: JavaScript (ES6+), ReactJS, NodeJS, ExpressJS, and MongoDB are my weapons of choice for building dynamic and interactive web applications.
+      1. MERN Stack: JavaScript (ES6+), ReactJS, NodeJS, ExpressJS, and MongoDB are my weapons of choice for building dynamic and interactive web applications.
       2. Design Savvy: I can whip up user interfaces that are both beautiful and intuitive, using Figma and thanks to my understanding of HTML, CSS, and Tailwind CSS I can transform these designs into pixel-perfect code. ✨
 
       But the Journey Doesn't End Here:
@@ -57,7 +57,10 @@ const projectsdata = [
       
       Python Whisperer: Flask and FastAPI are my next targets, unlocking the flexibility and power of Python for back-end development.
       
-      This is just the beginning! Every project on Cre8stevedev.me is a stepping stone, a testament to my commitment to continuous learning and growth. So, explore, poke around, and feel free to leave your feedback! I'm always eager to connect with fellow developers and learn from the best.`,
+      This is just the beginning! Every project on Cre8stevedev.me is a stepping stone, a testament to my commitment to continuous learning and growth. So, explore, poke around, and feel free to leave your feedback! I'm always eager to connect with fellow developers and learn from the best.
+      
+      Note: This Repository is obviously private, but you can explore my other coding projects on my Github.
+      `,
     githubUrl: "https://github.com/Cre8steveDev",
   },
   {

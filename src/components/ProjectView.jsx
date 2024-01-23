@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Navigate } from "react-router-dom";
 import projectsdata from "./projectsdata.js";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 const ProjectView = ({ setViewingProduct }) => {
   useEffect(() => {
@@ -15,13 +15,10 @@ const ProjectView = ({ setViewingProduct }) => {
 
   const proj = projectsdata.find((proj) => proj.id === param);
   const navigate = useNavigate();
+  const containerRef = useRef(null);
 
-  if (!proj)
-    return (
-      <div>
-        <p>Project Not Found</p>
-      </div>
-    );
+  // UseEffect that ensures element scrolls to the top when it mounts
+
   const stacks = proj.stacks;
 
   const handlePrevious = () => {
@@ -37,7 +34,7 @@ const ProjectView = ({ setViewingProduct }) => {
 
   const handleNext = () => {
     // Handle Next Logic
-    if (!currentIndex) {
+    if (currentIndex >= 2) {
       navigate(`/project/${projectsArray[0]}`);
     } else {
       ++currentIndex;
@@ -45,10 +42,22 @@ const ProjectView = ({ setViewingProduct }) => {
     }
   };
 
-  return (
+  // Save location link
+  const locationData = location.href;
+
+  useEffect(() => {
+    if (containerRef.current) {
+      containerRef.current.scrollTop = 0;
+    }
+  }, [locationData]);
+
+  return proj ? (
     <div className="w-full h-screen snap-center min-h-screen overflow-y-scroll flex flex-col justify-center relative overflow-x-hidden ">
       {/*  */}
-      <div className="flex flex-col bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl p-6 text-center mt-12 sm:mt-32 items-center text-darkNeutral  overflow-y-scroll">
+      <div
+        ref={containerRef}
+        className="flex flex-col bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl p-6 text-center mt-12 sm:mt-32 items-center text-darkNeutral  overflow-y-scroll"
+      >
         {/* Image and Short Stats starts here */}
         <section className="w-full">
           <img src={proj.imgUrl} alt={proj.projName} className="rounded-lg" />
@@ -100,7 +109,7 @@ const ProjectView = ({ setViewingProduct }) => {
           </button>
           {/* Live project Link */}
           <a href={proj.liveUrl} target="_blank" rel="noreferrer">
-            <button className="bg-purple-700 p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl">
+            <button className="bg-red-700 p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl">
               Live Link
             </button>
           </a>
@@ -122,6 +131,8 @@ const ProjectView = ({ setViewingProduct }) => {
         </section>
       </div>
     </div>
+  ) : (
+    <Navigate to="/" />
   );
 };
 
