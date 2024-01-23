@@ -1,6 +1,18 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  // Trying this because of side effect caused by using HashRouter
+
+  useEffect(() => {
+    window.addEventListener("hashchange", () => {
+      const targetId = window.location.hash.slice(1); // Remove leading #
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  }, []);
   return (
     <div className="w-full fixed sm:top-5 z-[5]">
       <div className="rounded-md w-full mx-auto  max-w-screen-lg flex justify-between items-center shadow-lg mt-2 sm:mt-5 p-6 shadow-['rgba(0, 0, 0, 0.45)'] bg-darkNeutral text-darkBlue">
