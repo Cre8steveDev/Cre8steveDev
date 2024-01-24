@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
+import emailjs from "@emailjs/browser";
 
 // eslint-disable-next-line react/prop-types
 const Contact = ({ setScrollY }) => {
@@ -11,30 +12,71 @@ const Contact = ({ setScrollY }) => {
     email: "",
     message: "",
   });
+  const [success, setSuccess] = useState(null);
+
+  const formRef = useRef(null);
 
   useEffect(() => {
     setScrollY(100);
   }, [isInView, setScrollY]);
 
   // Handle Send Message
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    // console.log("Sending");
 
-    try {
-      // Handle Call to EmailJS
-      // Observe response
-      // reset form after sending
-      // On succes....
-      //notifySuccess("Thanks for your Message! I'll get back to you shortly");
-    } catch (error) {
-      error;
-    }
+    setSuccess(null);
+    // emailjs
+    //   .sendForm(
+    //     "service_jipajq5",
+    //     "template_fvie6ra",
+    //     formRef.current,
+    //     "8_TN9LV0t0gro5hJq"
+    //   )
+    //   .then(
+    //     (result) => {
+    //       setSuccess(true);
+    //       result;
+    //     },
+    //     (error) => {
+    //       setError(true);
+    //       error;
+    //     }
+    //   );
+    let templateParams = {
+      name: formData.name,
+      email: formData.email,
+      message: formData.message,
+    };
+
+    emailjs
+      .send(
+        "service_jipajq5",
+        "template_lk0v0k6",
+        templateParams,
+        "8_TN9LV0t0gro5hJq"
+      )
+      .then(
+        function (response) {
+          setSuccess(true);
+          setFormData({
+            name: "",
+            email: "",
+            message: "",
+          });
+          response;
+        },
+        function (error) {
+          alert("Sorry, there was an error sending the mail. Please Try again");
+          error;
+        }
+      );
   };
 
   //  Handle FormChance
   const handleFormChange = (e) => {
     // Handle form change logic
+
+    setSuccess(null);
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
@@ -80,7 +122,7 @@ const Contact = ({ setScrollY }) => {
             <form
               onSubmit={handleSubmit}
               className="w-full p-4 overflow-hidden"
-              // ref={form}
+              ref={formRef}
             >
               {/* Enter details of the form  */}
               <label
@@ -133,10 +175,13 @@ const Contact = ({ setScrollY }) => {
                 className=" w-full p-2 mb-2 text-darkBlue focus:outline-none focus:rounded-lg focus:shadow-4xl focus:bg-white transition duration-200 ease-in bg-darkNeutral"
               ></textarea>
               {/*  */}
+
               <input
                 type="submit"
-                value={"SEND MESSSAGE"}
-                className=" w-full p-2  bg-darkBlue font-bold hover:bg-darkBrown hover:text-darkBlue transition ease-out duration-300 hover:rounded-xl shadow-2xl active:scale-75 sm:text-left"
+                value={success ? "Thanks for your message!" : "SEND MESSSAGE"}
+                className={`w-full p-2  ${
+                  success ? "bg-green-600 disabled" : "bg-darkBlue"
+                } font-bold hover:bg-darkBrown hover:text-darkBlue transition ease-out duration-300 hover:rounded-xl shadow-2xl active:scale-75 sm:text-left`}
               />
             </form>
 
