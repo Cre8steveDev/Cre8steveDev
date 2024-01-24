@@ -76,7 +76,9 @@ const Portfolio = ({ setScrollY }) => {
                 <img src={proj.image} alt="" className="w-full" />
                 <div className="p-3">
                   <h2 className="font-extrabold text-xl">{proj.name}</h2>
-                  <p className="text-sm">Click To View Details</p>
+                  {proj.description !== "" && (
+                    <p className="text-sm">Click To View Details</p>
+                  )}
                   <p className="text-sm my-3 w-[90%] mx-auto">
                     {proj.description}
                   </p>

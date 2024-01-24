@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useParams, useNavigate, Navigate } from "react-router-dom";
+import { useParams, useNavigate, Navigate, Link } from "react-router-dom";
 import projectsdata from "./projectsdata.js";
 import { useEffect, useRef } from "react";
 
@@ -101,12 +101,14 @@ const ProjectView = ({ setViewingProduct }) => {
         {/* Live Link and Github link here || Next and Previous */}
         <section className="flex gap-4 mt-4 flex-wrap justify-center items-center">
           {/* Handle Previous Project View */}
-          <button
-            className="bg-white text-slate-900 p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl"
-            onClick={handlePrevious}
-          >
-            Previous
-          </button>
+          {currentIndex > 0 && (
+            <button
+              className="bg-white text-slate-900 p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl"
+              onClick={handlePrevious}
+            >
+              Previous
+            </button>
+          )}
           {/* Live project Link */}
           <a href={proj.liveUrl} target="_blank" rel="noreferrer">
             <button className="bg-red-700 p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl">
@@ -122,12 +124,20 @@ const ProjectView = ({ setViewingProduct }) => {
           </a>
 
           {/* Handle Next Project View */}
-          <button
-            className="bg-white text-slate-900 p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl"
-            onClick={handleNext}
-          >
-            Next
-          </button>
+          {currentIndex < 2 && (
+            <button
+              className="bg-white text-slate-900 p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl"
+              onClick={handleNext}
+            >
+              Next
+            </button>
+          )}
+          {/* Go Back Home */}
+          <Link to="/">
+            <button className="bg-darkBlue text-slate-50 p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl">
+              Back to Home
+            </button>
+          </Link>
         </section>
       </div>
     </div>
