@@ -27,7 +27,7 @@ const GlassMorphism = ({ setScrollY, setViewingProduct }) => {
         <Route
           index
           element={
-            <div className="overflow-x-hidden">
+            <div className="">
               <HeroPage setScrollY={setScrollY} />
               <Skills setScrollY={setScrollY} />
               <Portfolio setScrollY={setScrollY} />
@@ -40,10 +40,7 @@ const GlassMorphism = ({ setScrollY, setViewingProduct }) => {
           path="project/:param"
           element={<ProjectView setViewingProduct={setViewingProduct} />}
         />
-        <Route
-          path="*"
-          element={<div className="mt-11 text-white">Error</div>}
-        />
+        <Route path="*" element={<div>Error</div>} />
       </Routes>
     </div>
   );
