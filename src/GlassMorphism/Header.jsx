@@ -15,7 +15,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="w-full fixed sm:top-5 z-[5] overflow-x">
+    <div className="w-[100vw] fixed sm:top-5 z-[5] overflow-x-hidden">
       <div className="rounded-md w-full mx-auto  max-w-screen-lg flex justify-between items-center shadow-lg mt-2 sm:mt-5 p-6 shadow-['rgba(0, 0, 0, 0.45)'] bg-darkNeutral text-darkBlue overflow-x">
         {/*  */}
         {/* Site Logo */}
