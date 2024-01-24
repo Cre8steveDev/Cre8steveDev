@@ -35,7 +35,7 @@ function App() {
         // backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
-      className="flex flex-col  items-center w-screen h-screen overflow-x-hidden"
+      className="flex flex-col  items-center w-full h-screen overflow-hidden"
     >
       {glassMorphism && (
         <GlassMorphism
