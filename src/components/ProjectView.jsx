@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useParams, useNavigate, Navigate, Link } from "react-router-dom";
+import { useParams, useNavigate, Navigate } from "react-router-dom";
 import projectsdata from "./projectsdata.js";
 import { useEffect, useRef } from "react";
 
@@ -99,11 +99,11 @@ const ProjectView = ({ setViewingProduct }) => {
         </section>
 
         {/* Live Link and Github link here || Next and Previous */}
-        <section className="flex gap-4 mt-4 flex-wrap justify-center items-center">
+        <section className="flex gap-3 mt-4 flex-wrap justify-center items-center">
           {/* Handle Previous Project View */}
           {currentIndex > 0 && (
             <button
-              className="bg-white text-slate-900 p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl"
+              className="bg-white text-xs sm:text-sm text-slate-900 p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl"
               onClick={handlePrevious}
             >
               Previous
@@ -111,33 +111,33 @@ const ProjectView = ({ setViewingProduct }) => {
           )}
           {/* Live project Link */}
           <a href={proj.liveUrl} target="_blank" rel="noreferrer">
-            <button className="bg-red-700 p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl">
+            <button className="bg-red-700 text-xs sm:text-sm p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl">
               Live Link
             </button>
           </a>
 
           {/* Github Code link */}
           <a href={proj.githubUrl} target="_blank" rel="noreferrer">
-            <button className="bg-black p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl">
-              View Code on GitHub
+            <button className="bg-black text-xs sm:text-sm p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl">
+              GitHub
             </button>
           </a>
 
           {/* Handle Next Project View */}
           {currentIndex < 2 && (
             <button
-              className="bg-white text-slate-900 p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl"
+              className="bg-white text-xs sm:text-sm text-slate-900 p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl"
               onClick={handleNext}
             >
               Next
             </button>
           )}
           {/* Go Back Home */}
-          <Link to="/">
-            <button className="bg-darkBlue text-slate-50 p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl">
+          <a href="/">
+            <button className="bg-darkBlue text-xs sm:text-sm text-slate-50 p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl">
               Back to Home
             </button>
-          </Link>
+          </a>
         </section>
       </div>
     </div>

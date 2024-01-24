@@ -20,7 +20,7 @@ const GlassMorphism = ({ setScrollY, setViewingProduct }) => {
   }, []);
 
   return (
-    <div className="flex flex-col  items-center relative snap-y snap-mandatory w-full md:w-[90%] lg:max-w-screen-lg overflow-y-scroll">
+    <div className="flex flex-col  items-center relative snap-y snap-mandatory w-full md:w-[90%] lg:max-w-screen-lg overflow-y-scroll overflow-x-hidden">
       <Header />
 
       <Routes>
