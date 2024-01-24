@@ -78,7 +78,7 @@ function App() {
         )}
 
         {/* Go To Top */}
-        {scrollY > 0 && !viewingProduct && (
+        {scrollY > 0 && !viewingProduct && glassMorphism && (
           <a href="#home">
             <input
               type="button"

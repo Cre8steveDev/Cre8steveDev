@@ -52,11 +52,16 @@ const Resume = ({ setScrollY }) => {
             </p>
 
             {/* Download Button */}
-            <input
-              type="button"
-              value={"DOWNLOAD RESUME"}
-              className="p-3 bg-darkNeutral backdrop-blur-3xl w-full max-w-[80%] mx-auto rounded-lg cursor-pointer active:animate-ping hover:bg-white hover:text-darkBlue transition ease-in animate-pulse"
-            />
+            <a
+              href="Resume_Stephen_Omoregie_FrontEnd_Developer.pdf"
+              download={true}
+            >
+              <input
+                type="button"
+                value={"DOWNLOAD RESUME"}
+                className="p-3 bg-darkNeutral backdrop-blur-3xl w-full max-w-[80%] mx-auto rounded-lg cursor-pointer active:animate-ping hover:bg-white hover:text-darkBlue transition ease-in animate-pulse"
+              />
+            </a>
           </div>
 
           {/* RIGHT HAND SIDE */}
