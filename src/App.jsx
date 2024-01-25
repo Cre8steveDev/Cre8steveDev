@@ -35,7 +35,7 @@ function App() {
         // backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
-      className="flex flex-col  items-center w-full h-screen overflow-hidden"
+      className="flex flex-col  items-center w-full h-screen overflow-hidden bg-orange-700"
     >
       {glassMorphism && (
         <GlassMorphism
@@ -47,7 +47,7 @@ function App() {
       {!glassMorphism && <RandomQuote />}
 
       {/* Interactivity */}
-      <div className=" block w-[30px] sm:w-[40px] absolute top-[440px] sm:top-32 sm:right-3 right-0">
+      <div className="  w-[30px] sm:w-[40px] absolute top-[440px] sm:top-32 sm:right-3 right-0 hidden">
         {/* Scroll Progress Bar */}
 
         {!viewingProduct && (
