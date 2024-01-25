@@ -87,7 +87,7 @@ function App() {
                 opacity:
                   scrollY > 0 && !viewingProduct && glassMorphism ? 1 : 0,
               }}
-              className="-rotate-90 mt-16  -ml-1 bg-darkBlue text-darkNeutral p-2 text-xs font-bold hover:bg-darkBrown transition ease-in rounded-xl hidden sm:block"
+              className="-rotate-90 mt-16  -ml-1 bg-darkBlue text-darkNeutral p-2 text-xs font-bold hover:bg-darkBrown transition ease-in rounded-xl opacity-0 sm:opacity-100"
             />
           </a>
         }
