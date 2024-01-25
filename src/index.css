@@ -20,18 +20,8 @@
 }
 
 body {
-  width: 100vw !important;
-  height: 100vh !important;
-  overflow-x: hidden !important;
-  overflow-y: hidden !important;
-  background-color: red;
-}
-
-#root {
-  overflow: hidden;
   width: 100vw;
   height: 100vh;
-  background-color: green;
 }
 
 #quoteText {
