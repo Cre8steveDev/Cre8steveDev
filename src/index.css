@@ -27,6 +27,12 @@ body {
   background-color: red;
 }
 
+#root {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
 #quoteText {
   font-family: "Playfair Display", sans-serif;
 }
