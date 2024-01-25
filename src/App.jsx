@@ -47,7 +47,7 @@ function App() {
       {!glassMorphism && <RandomQuote />}
 
       {/* Interactivity */}
-      <div className="  w-[30px] sm:w-[40px] absolute top-[400px] sm:top-32 sm:right-3 right-0 overflow-x-hidden bg-white h-max">
+      <div className="  w-[30px] sm:w-[40px] absolute top-[400px] sm:top-32 sm:right-3 right-0 overflow-x-hidden h-max">
         {/* Scroll Progress Bar */}
 
         {!viewingProduct && (
@@ -78,15 +78,19 @@ function App() {
         )}
 
         {/* Go To Top */}
-        {scrollY > 0 && !viewingProduct && glassMorphism && (
+        {
           <a href="#home">
             <input
               type="button"
               value={"=> Top"}
-              className="-rotate-90 mt-14  -ml-1 bg-darkBlue text-darkNeutral p-2 text-xs font-bold hover:bg-darkBrown transition ease-in rounded-xl hidden sm:block"
+              style={{
+                opacity:
+                  scrollY > 0 && !viewingProduct && glassMorphism ? 1 : 0,
+              }}
+              className="-rotate-90 mt-16  -ml-1 bg-darkBlue text-darkNeutral p-2 text-xs font-bold hover:bg-darkBrown transition ease-in rounded-xl hidden sm:block"
             />
           </a>
-        )}
+        }
       </div>
     </motion.div>
   );
