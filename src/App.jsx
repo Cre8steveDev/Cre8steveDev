@@ -47,7 +47,7 @@ function App() {
       {!glassMorphism && <RandomQuote />}
 
       {/* Interactivity */}
-      <div className="  w-[30px] sm:w-[40px] absolute top-[440px] sm:top-32 sm:right-3 right-0 overflow-hidden">
+      <div className="  w-[30px] sm:w-[40px] absolute top-[410px] sm:top-32 sm:right-3 right-0 overflow-x-hidden">
         {/* Scroll Progress Bar */}
 
         {!viewingProduct && (
