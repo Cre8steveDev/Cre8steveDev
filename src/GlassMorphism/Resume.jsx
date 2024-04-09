@@ -1,10 +1,10 @@
-import { useEffect, useRef } from "react";
-import { useInView } from "framer-motion";
+import { useEffect, useRef } from 'react';
+import { useInView } from 'framer-motion';
 
 // eslint-disable-next-line react/prop-types
 const Resume = ({ setScrollY }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { amount: "all" });
+  const isInView = useInView(ref, { amount: 'all' });
 
   useEffect(() => {
     setScrollY(75);
@@ -42,7 +42,7 @@ const Resume = ({ setScrollY }) => {
               Full Stack MERN Developer
             </p>
             <p className="font-medium text-sm text-darkNeutral">
-              Python (Flash & Django)
+              Python (Flask & Django)
             </p>
             <p className="font-medium text-sm text-darkNeutral">
               Designer (Graphic and UI)
@@ -58,7 +58,7 @@ const Resume = ({ setScrollY }) => {
             >
               <input
                 type="button"
-                value={"DOWNLOAD RESUME"}
+                value={'DOWNLOAD RESUME'}
                 className="p-3 bg-darkNeutral backdrop-blur-3xl w-full max-w-[80%] mx-auto rounded-lg cursor-pointer active:animate-ping hover:bg-white hover:text-darkBlue transition ease-in animate-pulse"
               />
             </a>
@@ -72,7 +72,7 @@ const Resume = ({ setScrollY }) => {
                 B.Sc Computer Science
               </h2>
               <p className="text-sm mb-2">
-                National Open University of Nigeria{" "}
+                National Open University of Nigeria{' '}
               </p>
               <h2 className="font-extrabold text-white">
                 Full Stack Software Engineer
@@ -98,7 +98,7 @@ const Resume = ({ setScrollY }) => {
                 Listening to Jazz Music
               </h2>
               <p className="text-sm mb-2">
-                (Louis Prima, Frank Sinatra, et al){" "}
+                (Louis Prima, Frank Sinatra, et al){' '}
               </p>
               <p className="font-extrabold text-white">Wannabe Philosopher</p>
             </section>
