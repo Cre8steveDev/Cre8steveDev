@@ -22,6 +22,7 @@ const Portfolio = ({ setScrollY }) => {
     >
       {/*  */}
       <div className="flex flex-col  bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl gap-4 p-6 text-center sm:mt-12 items-center text-darkNeutral sm:w-[90%] lg:w-full mt-[1000px]">
+        <div className="h-[800px] sm:h-0 sm:hidden"></div>
         <h2 className="tracking-[0.6rem] mt-[100px] sm:mt-0">MY PORTFOLIO</h2>
         <p className="max-w-2xl text-sm sm:text-md">
           Here are some of my featured projects showcasing my experience as a
@@ -64,6 +65,8 @@ const Portfolio = ({ setScrollY }) => {
                           ? 'bg-darkBlue text-white'
                           : tool === 'OpenAI'
                           ? 'bg-black text-white'
+                          : tool === 'Python'
+                          ? 'bg-yellow-500 text-black'
                           : 'bg-red-500 text-white';
                       return (
                         <input

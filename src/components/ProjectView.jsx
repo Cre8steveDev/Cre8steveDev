@@ -58,11 +58,11 @@ const ProjectView = ({ setViewingProduct }) => {
   }, [locationData]);
 
   return proj ? (
-    <div className="w-full h-screen snap-center min-h-screen overflow-y-scroll flex flex-col justify-center relative overflow-x-hidden ">
+    <div className="w-full h-full snap-center min-h-full overflow-y-scroll flex flex-col justify-center relative overflow-x-hidden mt-3 sm:mt-0">
       {/*  */}
       <div
         ref={containerRef}
-        className="flex flex-col bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl p-6 text-center mt-12 sm:mt-32 items-center text-darkNeutral  overflow-y-scroll"
+        className="flex flex-col bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl p-6 text-center mt-16 sm:mt-32 items-center text-darkNeutral  overflow-y-scroll"
       >
         {/* Image and Short Stats starts here */}
         <section className="w-full">
@@ -83,6 +83,8 @@ const ProjectView = ({ setViewingProduct }) => {
                   ? 'bg-darkBlue text-white'
                   : stack === 'OpenAI'
                   ? 'bg-black text-white'
+                  : stack === 'Python'
+                  ? 'bg-yellow-500 text-black'
                   : 'bg-red-500 text-white';
               return (
                 <input
@@ -99,7 +101,7 @@ const ProjectView = ({ setViewingProduct }) => {
         {/* Description Starts here */}
         <section className="w-full text-left mt-4 text-white bg-black p-4 rounded-lg bg-opacity-40">
           <h2 className="text-center font-extrabold">My Learning Points</h2>
-          <p className="hyphens-auto sm:p-[90px] sm:py-3 sm:text-lg whitespace-pre-line">
+          <p className="hyphens-auto sm:p-[90px] sm:py-3 text-xs sm:text-lg whitespace-pre-line">
             {proj.projDescription}
           </p>
         </section>
