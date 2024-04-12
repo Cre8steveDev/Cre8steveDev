@@ -1,15 +1,15 @@
-import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   // Trying this because of side effect caused by using HashRouter
 
   useEffect(() => {
-    window.addEventListener("hashchange", () => {
+    window.addEventListener('hashchange', () => {
       const targetId = window.location.hash.slice(1); // Remove leading #
       const targetElement = document.getElementById(targetId);
       if (targetElement) {
-        targetElement.scrollIntoView({ behavior: "smooth" });
+        targetElement.scrollIntoView({ behavior: 'smooth' });
       }
     });
   }, []);
@@ -27,8 +27,12 @@ const Header = () => {
 
         {/* Navigation */}
         <nav className="flex list-none gap-2 sm:gap-5 sm:text-base text-xs">
-          <a href="/#skills">
-            <li className="hover:opacity-55 transition ease-out ">Skills</li>
+          <a
+            href="https://dev.to/cre8stevedev"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <li className="hover:opacity-55 transition ease-out ">Blog</li>
           </a>
           <a href="/#projects">
             <li className="hover:opacity-55 transition ease-out">Projects</li>
