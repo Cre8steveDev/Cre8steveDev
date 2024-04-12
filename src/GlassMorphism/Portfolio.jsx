@@ -1,48 +1,13 @@
-import { useEffect, useRef } from "react";
-import { useInView } from "framer-motion";
-import { Link } from "react-router-dom";
+import { useEffect, useRef } from 'react';
+import { useInView } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
-// Projects Array Details
-const myProjects = [
-  {
-    image: "projects/greenshopper.png",
-    description:
-      "This exciting project was created using the MERN Stack. It exposed me to different tools and packages needed for building a fast, secure and responsive web app.",
-    tools: ["ReactJS", "ExpressJS", "MongoDB", "Tailwind"],
-    name: "GreenShopper eCommerce",
-    link: "greenshopper",
-  },
-
-  {
-    image: "projects/portfolio.png",
-    description:
-      "My Portfolio Website created with a passion for creating User-friendly and intuitive Interfaces that adequately represents my Skills as a proficient Full Stack Developer.",
-    tools: ["ReactJS", "Framer Motion", "Tailwind"],
-    name: "Cre8Stevedev.me",
-    link: "portfolio",
-  },
-
-  {
-    image: "projects/healthor.png",
-    description:
-      "Healthor is a project built using ReactJS with integration of the OpenAI ChatGPT API. The model used for this project is the GPT 3.5 Turbo for conversational diagnosis.",
-    tools: ["ReactJS", "OpenAI", "Google Maps"],
-    name: "Healthor - AI Diagnosis",
-    link: "healthor",
-  },
-  {
-    image: "",
-    description: "",
-    tools: [],
-    name: "Check back again for new Updates",
-    link: "",
-  },
-];
+import myProjects from '../utilities/projectsCardData';
 
 // eslint-disable-next-line react/prop-types
 const Portfolio = ({ setScrollY }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { amount: "all" });
+  const isInView = useInView(ref, { amount: 'all' });
 
   useEffect(() => {
     setScrollY(50);
@@ -73,10 +38,15 @@ const Portfolio = ({ setScrollY }) => {
               className="min-w-[300px] w-full max-w-[350px]  text-white rounded-xl overflow-hidden hover:shadow-2xl transition ease-in backdrop-blur-2xl bg-white bg-opacity-0"
             >
               <Link to={`/project/${proj.link}`}>
-                <img src={proj.image} alt="" className="w-full" />
+                <img
+                  src={proj.image}
+                  alt=""
+                  className="w-full"
+                  loading="lazy"
+                />
                 <div className="p-3">
                   <h2 className="font-extrabold text-xl">{proj.name}</h2>
-                  {proj.description !== "" && (
+                  {proj.description !== '' && (
                     <p className="text-sm">Click To View Details</p>
                   )}
                   <p className="text-sm my-3 w-[90%] mx-auto">
@@ -86,15 +56,15 @@ const Portfolio = ({ setScrollY }) => {
                     {/* Map Through the array of Tools */}
                     {proj.tools.map((tool, idx) => {
                       const colorr =
-                        tool === "ReactJS"
-                          ? "bg-blue-600 text-white"
-                          : tool === "MongoDB"
-                          ? "bg-green-600 text-white"
-                          : tool === "Tailwind"
-                          ? "bg-darkBlue text-white"
-                          : tool === "OpenAI"
-                          ? "bg-black text-white"
-                          : "bg-red-500 text-white";
+                        tool === 'ReactJS'
+                          ? 'bg-blue-600 text-white'
+                          : tool === 'MongoDB'
+                          ? 'bg-green-600 text-white'
+                          : tool === 'Tailwind'
+                          ? 'bg-darkBlue text-white'
+                          : tool === 'OpenAI'
+                          ? 'bg-black text-white'
+                          : 'bg-red-500 text-white';
                       return (
                         <input
                           key={idx}

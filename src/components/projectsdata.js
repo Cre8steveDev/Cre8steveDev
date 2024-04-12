@@ -1,10 +1,10 @@
 const projectsdata = [
   {
-    projName: "Green Shopper eCommerce",
-    id: "greenshopper",
-    imgUrl: "/projects/greenshopper_big.png",
-    liveUrl: "https://greenshopper-steven.onrender.com/",
-    stacks: ["ReactJS", "ExpressJS", "MongoDB", "TailwindCSS"],
+    projName: 'Green Shopper eCommerce',
+    id: 'greenshopper',
+    imgUrl: '/projects/greenshopper_big.png',
+    liveUrl: 'https://greenshopper-steven.onrender.com/',
+    stacks: ['ReactJS', 'ExpressJS', 'MongoDB', 'TailwindCSS'],
     projDescription: `Green Shopper is a ReactJS-powered web application designed to empower eco-conscious consumers. Leveraging a modern tech stack and intuitive UI/UX, it connects users with sustainable local businesses and products.
 
       Key Learning Points:
@@ -30,14 +30,69 @@ const projectsdata = [
       Green Shopper provided me with a comprehensive learning experience encompassing frontend, backend, and design aspects of full-stack development. The project solidified my understanding of core technologies like ReactJS, ExpressJS, MongoDB, and essential libraries like Redux, JWT, and Figma.
       
       I honed my problem-solving, debugging, and project management skills while navigating development challenges. Green Shopper instilled a passion for building eco-friendly and user-centric applications that empower positive change.`,
-    githubUrl: "https://github.com/Cre8steveDev/GreenShopper",
+    githubUrl: 'https://github.com/Cre8steveDev/GreenShopper',
   },
   {
-    projName: "Cre8Stevedev.me - Portfolio",
-    id: "portfolio",
-    imgUrl: "/projects/portfolio_big.png",
-    liveUrl: "https://cre8stevedev.me",
-    stacks: ["ReactJS", "Framer Motion", "TailwindCSS"],
+    projName: 'Clear Link | Landing Page',
+    id: 'clearlink',
+    imgUrl: '/projects/clearlink_big.png',
+    liveUrl: 'https://clearlink-cre8stevedev.netlify.app/',
+    stacks: ['ReactJS', 'Tailwind'],
+    projDescription: `This landing page serves as a demonstration of my front-end development skills using ReactJS and TailwindCSS. The project simulates a potential landing page for ClearLink, a video conferencing tool.
+
+    Key Learning Points:
+    Frontend Development (ReactJS & TailwindCSS):
+    1. Constructed a dynamic and responsive user interface leveraging ReactJS components.
+    2. Mastered TailwindCSS utility classes for efficient and consistent UI styling.
+    3. Optimized the landing page for seamless mobile responsiveness and cross-browser compatibility.
+    4. Built reusable components for maintainability and code efficiency.
+    
+    Modern Development Practices:
+    1. Implemented best practices for component structure and code organization.
+    2. Utilized Git for version control.
+    3. Focused on writing clean, maintainable, and well-documented code.
+    
+    Overall, this Skill Assessment Exercise served as a valuable learning experience, solidifying my knowledge of modern front-end development practices.
+    `,
+    githubUrl: 'https://github.com/Cre8steveDev/TalentSync_FrontEnd_Assessment',
+  },
+
+  {
+    projName: 'Convata | Free PDF Tool',
+    id: 'convata',
+    imgUrl: '/projects/convata_big.png',
+    liveUrl: 'https://convata.onrender.com/',
+    stacks: ['Flask', 'Python', 'Jinja Templating'],
+    projDescription: `Convata is a full-stack web application I built from the ground up to simplify PDF conversions while preserving the original content and structure, safely and with ease.  This open-source project on showcases my proficiency in Python web development and backend functionalities.
+
+    Key Learning Points:
+    
+    Full-Stack Development (Python & Flask):
+    1. Constructed a robust web application using Flask, a popular Python microframework.
+    2. Leveraged Python libraries like Pillow, PyPDF2, and PyMuPDF for efficient PDF processing and manipulation.
+    3. Established seamless database interaction with MongoDB and PyMongo for data persistence.
+    4. Implemented user authentication and authorization with Flask-Login to manage user access.
+    5. Handled file uploads and downloads, ensuring a user-friendly document conversion experience.
+    
+    Project Management:
+    1. Followed a structured development process, from planning and coding to testing and deployment.
+    2. Utilized Git for version control.
+    3. Focused on writing clean, well-documented, and maintainable code.
+       
+    Building Convata as an open-source project allowed me to:
+    1. Deepen my understanding of full-stack development using Python and Flask.
+    2. Master the use of essential libraries for PDF manipulation and database interaction.
+    3. Gain experience in user authentication and authorization.
+    4. Hone my problem-solving and project management skills.`,
+    githubUrl: 'https://github.com/Cre8steveDev/Convata',
+  },
+
+  {
+    projName: 'Cre8Stevedev.me - Portfolio',
+    id: 'portfolio',
+    imgUrl: '/projects/portfolio_big.png',
+    liveUrl: 'https://cre8stevedev.me',
+    stacks: ['ReactJS', 'Framer Motion', 'TailwindCSS'],
     projDescription: `Welcome to Cre8stevedev.me, my online playground where I showcase my journey as a passionate Full-Stack Web Developer!
 
       Think of it as a virtual gallery shocasing  projects that represent my growth and learning. Every line of code, every pixel on the screen, tells a story of exploration, experimentation, and pushing boundaries.
@@ -60,14 +115,14 @@ const projectsdata = [
       
       Note: This Repository is obviously private, but you can explore my other coding projects on my Github.
       `,
-    githubUrl: "https://github.com/Cre8steveDev",
+    githubUrl: 'https://github.com/Cre8steveDev',
   },
   {
-    projName: "Healthor - AI Chat Diagnosis",
-    id: "healthor",
-    imgUrl: "/projects/healthor_big.png",
-    liveUrl: "https://healthor-ai.netlify.app/",
-    stacks: ["ReactJS", "OpenAI", "Google Maps"],
+    projName: 'Healthor - AI Chat Diagnosis',
+    id: 'healthor',
+    imgUrl: '/projects/healthor_big.png',
+    liveUrl: 'https://healthor-ai.netlify.app/',
+    stacks: ['ReactJS', 'OpenAI', 'Google Maps'],
     projDescription: `Healthor is a web-based AI-powered medical diagnosis system designed to enhance access to healthcare and empower individuals to take control of their well-being. It leverages the power of OpenAI's GPT-3.5 Turbo model to provide conversational symptom analysis and potential diagnoses.
 
       Key Learning Points:
@@ -93,27 +148,27 @@ const projectsdata = [
 
       Note: Sadly, my access to the OpenAI api has been revoked as my starter bonus has expired. So you might not be able to test this powerful application at the moment
       `,
-    githubUrl: "https://github.com/Cre8steveDev/Healthor",
+    githubUrl: 'https://github.com/Cre8steveDev/Healthor',
   },
   {
-    projName: "**",
-    id: "",
-    imgUrl: "",
-    liveUrl: "",
+    projName: '**',
+    id: '',
+    imgUrl: '',
+    liveUrl: '',
     stacks: [],
     projDescription:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni vero neque fuga repellat voluptates quod, labore dignissimos rem officia enim harum consectetur aut accusamus corrupti veniam error vitae molestiae quae repellendus eum beatae itaque veritatis. Itaque adipisci maiores reiciendis. Ex minima laboriosam a, corrupti totam aut exercitationem voluptas tenetur alias repellendus enim quos fugit cumque iste facere, ipsam necessitatibus earum!",
-    githubUrl: "",
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni vero neque fuga repellat voluptates quod, labore dignissimos rem officia enim harum consectetur aut accusamus corrupti veniam error vitae molestiae quae repellendus eum beatae itaque veritatis. Itaque adipisci maiores reiciendis. Ex minima laboriosam a, corrupti totam aut exercitationem voluptas tenetur alias repellendus enim quos fugit cumque iste facere, ipsam necessitatibus earum!',
+    githubUrl: '',
   },
   {
-    projName: "***",
-    id: "",
-    imgUrl: "",
-    liveUrl: "",
+    projName: '***',
+    id: '',
+    imgUrl: '',
+    liveUrl: '',
     stacks: [],
     projDescription:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni vero neque fuga repellat voluptates quod, labore dignissimos rem officia enim harum consectetur aut accusamus corrupti veniam error vitae molestiae quae repellendus eum beatae itaque veritatis. Itaque adipisci maiores reiciendis. Ex minima laboriosam a, corrupti totam aut exercitationem voluptas tenetur alias repellendus enim quos fugit cumque iste facere, ipsam necessitatibus earum!",
-    githubUrl: "",
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni vero neque fuga repellat voluptates quod, labore dignissimos rem officia enim harum consectetur aut accusamus corrupti veniam error vitae molestiae quae repellendus eum beatae itaque veritatis. Itaque adipisci maiores reiciendis. Ex minima laboriosam a, corrupti totam aut exercitationem voluptas tenetur alias repellendus enim quos fugit cumque iste facere, ipsam necessitatibus earum!',
+    githubUrl: '',
   },
 ];
 

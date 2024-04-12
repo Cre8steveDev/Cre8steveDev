@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
-import { useParams, useNavigate, Navigate } from "react-router-dom";
-import projectsdata from "./projectsdata.js";
-import { useEffect, useRef } from "react";
+import { useParams, useNavigate, Navigate } from 'react-router-dom';
+import projectsdata from './projectsdata.js';
+import { useEffect, useRef } from 'react';
 
 const ProjectView = ({ setViewingProduct }) => {
   useEffect(() => {
@@ -10,7 +10,13 @@ const ProjectView = ({ setViewingProduct }) => {
   }, []);
   const { param } = useParams();
 
-  const projectsArray = ["greenshopper", "portfolio", "healthor"];
+  const projectsArray = [
+    'greenshopper',
+    'convata',
+    'clearlink',
+    'portfolio',
+    'healthor',
+  ];
   let currentIndex = projectsArray.indexOf(param);
 
   const proj = projectsdata.find((proj) => proj.id === param);
@@ -25,7 +31,7 @@ const ProjectView = ({ setViewingProduct }) => {
     // Handle previous logic
 
     if (!currentIndex) {
-      navigate(`/project/${projectsArray[2]}`);
+      navigate(`/project/${projectsArray[4]}`);
     } else {
       --currentIndex;
       navigate(`/project/${projectsArray[currentIndex]}`);
@@ -34,7 +40,7 @@ const ProjectView = ({ setViewingProduct }) => {
 
   const handleNext = () => {
     // Handle Next Logic
-    if (currentIndex >= 2) {
+    if (currentIndex >= 4) {
       navigate(`/project/${projectsArray[0]}`);
     } else {
       ++currentIndex;
@@ -69,15 +75,15 @@ const ProjectView = ({ setViewingProduct }) => {
           <div className="flex gap-1 justify-center">
             {stacks.map((stack, idx) => {
               const colorr =
-                stack === "ReactJS"
-                  ? "bg-blue-600 text-white"
-                  : stack === "MongoDB"
-                  ? "bg-green-600 text-white"
-                  : stack === "TailwindCSS"
-                  ? "bg-darkBlue text-white"
-                  : stack === "OpenAI"
-                  ? "bg-black text-white"
-                  : "bg-red-500 text-white";
+                stack === 'ReactJS'
+                  ? 'bg-blue-600 text-white'
+                  : stack === 'MongoDB'
+                  ? 'bg-green-600 text-white'
+                  : stack === 'TailwindCSS'
+                  ? 'bg-darkBlue text-white'
+                  : stack === 'OpenAI'
+                  ? 'bg-black text-white'
+                  : 'bg-red-500 text-white';
               return (
                 <input
                   key={idx}
@@ -124,7 +130,7 @@ const ProjectView = ({ setViewingProduct }) => {
           </a>
 
           {/* Handle Next Project View */}
-          {currentIndex < 2 && (
+          {currentIndex < 4 && (
             <button
               className="bg-white text-xs sm:text-sm text-slate-900 p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl"
               onClick={handleNext}
