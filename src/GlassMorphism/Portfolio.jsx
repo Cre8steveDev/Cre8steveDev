@@ -61,12 +61,14 @@ const Portfolio = ({ setScrollY }) => {
                           ? 'bg-blue-600 text-white'
                           : tool === 'MongoDB'
                           ? 'bg-green-600 text-white'
-                          : tool === 'Tailwind'
+                          : tool === 'TailwindCSS'
                           ? 'bg-darkBlue text-white'
                           : tool === 'OpenAI'
                           ? 'bg-black text-white'
                           : tool === 'Python'
                           ? 'bg-yellow-500 text-black'
+                          : tool === 'TypeScript'
+                          ? 'bg-blue-500 text-white'
                           : 'bg-red-500 text-white';
                       return (
                         <input

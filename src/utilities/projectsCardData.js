@@ -1,6 +1,22 @@
 // Projects Array Details
 const myProjects = [
   {
+    image: 'projects/medikall.png',
+    description:
+      'This was yet another exciting learning experience for me. Building a Full Stack Application for my Portfolio project in the ALX Foundations Round up - Truly made me fall in love with TypeScript',
+    tools: ['ReactJS', 'TypeScript', 'ExpressJS', 'MongoDB'],
+    name: 'Medikall | Appointment Booking',
+    link: 'medikall',
+  },
+  {
+    image: 'projects/medikall_landing.png',
+    description:
+      'As part of the requirements for the MVP which we delivered for the Portfolio project, we also had to make a landing page! I put in my design skills to make this lovely.',
+    tools: ['ReactJS', 'TypeScript', 'TailwindCSS'],
+    name: 'Medikall Landing Page',
+    link: 'medikall_landing',
+  },
+  {
     image: 'projects/greenshopper.png',
     description:
       'This exciting project was created using the MERN Stack. It exposed me to different tools and packages needed for building a fast, secure and responsive web app.',

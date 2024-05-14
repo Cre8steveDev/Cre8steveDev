@@ -1,5 +1,43 @@
 const projectsdata = [
   {
+    projName: 'Medikall | Landing Page',
+    id: 'medikall_landing',
+    imgUrl: '/projects/medikall_landing_big.png',
+    liveUrl: 'https://info-medikall.netlify.app/',
+    stacks: ['ReactJS', 'TypeScript', 'TailwindCSS'],
+    projDescription: `Medikall wasn't just another project for my portfolio presentation, it was a learning odyssey. As a software engineering student at the prestigious Alx Software Engineering Program (Foundation), I was eager to apply my newfound knowledge to a real-world project. Medikall became the perfect canvas to experiment, iterate, and push my boundaries.
+    
+    Having experienced first hand, how strenous it can be most times when visiting a clinic at most hospitals to book a consultation, I figured it might be a great idea to build something that can provide a solution to that problem. Something that can be refined into a product that offers convenience to patients and streamline consultation for doctors. While this is just an MVP, I hope to build on the App over time and who knows, it could be a profitable jumpstart for something big in the future of open source contributions from me.
+    `,
+    githubUrl: 'https://github.com/Cre8steveDev/Medikall_Landing_Page',
+  },
+  {
+    projName: 'Medikall | Appointment Booking',
+    id: 'medikall',
+    imgUrl: '/projects/medikall_big.png',
+    liveUrl: 'https://new-medikall.onrender.com/',
+    stacks: ['ReactJS', 'TypeScript', 'ExpressJS', 'MongoDB'],
+    projDescription: `Medikall is a full-feature MERN Stack Powered web application that seeks to revolutionize medical appointments with health facilities. For adopters of the platform, it can serve as a Saas that helps to streamline how patients book appointments seamlessly without the inconvenience of crowded General Practice Clinic reception halls.
+
+      Key Learning Points:
+      
+      Frontend (ReactJS, TypeScript and):
+      1. I built a dynamic and responsive user interface with ReactJS, HTML, and TailwindCSS.
+      2. Gaind hands-on experience with TypeScript for ensuring strict typing and a better developer experience
+      3. Implemented client-side Routing using React-Router-Dom library.
+      4. Ensured a smooth user experience and semantic html
+
+      Backend (ExpressJS & MongoDB):
+      1. Developed secure APIs using ExpressJS for user authentication, authorization, and data management. Secured user data with password hashing using bcryptjs.
+      2. Implemented User Authentication using PassportJS Local Strategy.
+      3. Established seamless database interaction with Mongoose and MongoDB Atlas.
+      4. Honed debugging skills using Postman for API testing and troubleshooting.
+      
+      Impact & Takeaways:     
+      This project was a full-stack development adventure built with the MERN stack (MongoDB, Express.js, React.js, and Node.js) for maximum flexibility and a streamlined workflow. Leveraging TypeScript ensured rock-solid code with type safety, while Mongoose provided the muscle for crafting powerful database schemas. The experience was a treasure trove of learning, from best practices to deployment strategies, making me a well-equipped developer ready for the next challenge.`,
+    githubUrl: 'https://github.com/Cre8steveDev/Medikall',
+  },
+  {
     projName: 'Green Shopper eCommerce',
     id: 'greenshopper',
     imgUrl: '/projects/greenshopper_big.png',
