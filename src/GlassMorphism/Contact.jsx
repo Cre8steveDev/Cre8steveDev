@@ -87,7 +87,7 @@ const Contact = ({ setScrollY }) => {
       className="w-full sm:h-screen sm:snap-center sm:min-h-screen overflow-y-scroll flex flex-col justify-center relative overflow-x-hidden "
     >
       {/*  */}
-      <div className="flex flex-col  bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl gap-4 p-6 text-center sm:mt-12 items-center text-darkNeutral">
+      <div className="flex flex-col  bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl gap-4 p-6 text-center mt-[110px] sm:mt-12 items-center text-darkNeutral">
         <h2 className="tracking-[0.6rem] sm:text-inherit text-sm">
           READY TO BUILD SOMETHING SPECTACULAR?
         </h2>
