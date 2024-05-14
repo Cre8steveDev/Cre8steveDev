@@ -183,8 +183,6 @@ const projectsdata = [
       
       Impact & Takeaways:
       Healthor showcases my understanding of diverse technologies and project management skills.The project highlights my innovative approach to using AI for social good and my commitment to addressing healthcare challenges.I gained invaluable experience in working with cutting-edge technology like OpenAI's GPT-3.5, positioning me for a future in AI-driven software solutions.
-
-      Note: Sadly, my access to the OpenAI api has been revoked as my starter bonus has expired. So you might not be able to test this powerful application at the moment
       `,
     githubUrl: 'https://github.com/Cre8steveDev/Healthor',
   },
