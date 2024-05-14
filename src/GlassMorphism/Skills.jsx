@@ -59,7 +59,7 @@ const Skills = ({ setScrollY }) => {
           }
         </div>
         <p className="text-xs tracking-widest">
-          WEILDING THESE TOOLS WITH A HIGH-LEVEL OF PROFICIENCY
+          WIELDING THESE TOOLS WITH A HIGH-LEVEL OF PROFICIENCY
         </p>
       </div>
     </div>
