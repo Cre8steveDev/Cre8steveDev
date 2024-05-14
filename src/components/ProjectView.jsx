@@ -60,7 +60,7 @@ const ProjectView = ({ setViewingProduct }) => {
   }, [locationData]);
 
   return proj ? (
-    <div className="w-full h-full snap-center min-h-full overflow-y-scroll flex flex-col justify-center relative overflow-x-hidden mt-3 sm:mt-0">
+    <div className="w-full h-full sm:snap-center min-h-full overflow-y-scroll flex flex-col justify-center relative overflow-x-hidden mt-3 sm:mt-0">
       {/*  */}
       <div
         ref={containerRef}

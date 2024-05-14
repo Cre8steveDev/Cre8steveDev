@@ -1,16 +1,16 @@
-import { useEffect, useRef, useState } from "react";
-import { motion, useInView } from "framer-motion";
-import emailjs from "@emailjs/browser";
+import { useEffect, useRef, useState } from 'react';
+import { motion, useInView } from 'framer-motion';
+import emailjs from '@emailjs/browser';
 
 // eslint-disable-next-line react/prop-types
 const Contact = ({ setScrollY }) => {
   const ref = useRef(null);
 
-  const isInView = useInView(ref, { amount: "all" });
+  const isInView = useInView(ref, { amount: 'all' });
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
+    name: '',
+    email: '',
+    message: '',
   });
   const [success, setSuccess] = useState(null);
 
@@ -50,23 +50,23 @@ const Contact = ({ setScrollY }) => {
 
     emailjs
       .send(
-        "service_jipajq5",
-        "template_lk0v0k6",
+        'service_jipajq5',
+        'template_lk0v0k6',
         templateParams,
-        "8_TN9LV0t0gro5hJq"
+        '8_TN9LV0t0gro5hJq'
       )
       .then(
         function (response) {
           setSuccess(true);
           setFormData({
-            name: "",
-            email: "",
-            message: "",
+            name: '',
+            email: '',
+            message: '',
           });
           response;
         },
         function (error) {
-          alert("Sorry, there was an error sending the mail. Please Try again");
+          alert('Sorry, there was an error sending the mail. Please Try again');
           error;
         }
       );
@@ -84,7 +84,7 @@ const Contact = ({ setScrollY }) => {
     <div
       id="contact"
       ref={ref}
-      className="w-full h-screen snap-center min-h-screen overflow-y-scroll flex flex-col justify-center relative overflow-x-hidden "
+      className="w-full sm:h-screen sm:snap-center sm:min-h-screen overflow-y-scroll flex flex-col justify-center relative overflow-x-hidden "
     >
       {/*  */}
       <div className="flex flex-col  bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl gap-4 p-6 text-center sm:mt-12 mt-[580px] items-center text-darkNeutral">
@@ -106,11 +106,11 @@ const Contact = ({ setScrollY }) => {
               className="w-full"
               initial={{ scale: 1, opacity: 1, y: 0 }}
               animate={{
-                y: "10%",
+                y: '10%',
                 opacity: 0.8,
                 transition: {
                   repeat: Infinity,
-                  repeatType: "reverse",
+                  repeatType: 'reverse',
                   duration: 1.2,
                 },
               }}
@@ -178,9 +178,9 @@ const Contact = ({ setScrollY }) => {
 
               <input
                 type="submit"
-                value={success ? "Thanks for your message!" : "SEND MESSSAGE"}
+                value={success ? 'Thanks for your message!' : 'SEND MESSSAGE'}
                 className={`w-full p-2  ${
-                  success ? "bg-green-600 disabled" : "bg-darkBlue"
+                  success ? 'bg-green-600 disabled' : 'bg-darkBlue'
                 } font-bold hover:bg-darkBrown hover:text-darkBlue transition ease-out duration-300 hover:rounded-xl shadow-2xl active:scale-75 sm:text-left`}
               />
             </form>

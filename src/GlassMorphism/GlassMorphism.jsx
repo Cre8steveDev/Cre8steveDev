@@ -1,13 +1,13 @@
 // Import UI Components
-import Header from "./Header.jsx";
-import HeroPage from "./HeroPage.jsx";
-import Skills from "./Skills.jsx";
-import Portfolio from "./Portfolio.jsx";
-import Resume from "./Resume.jsx";
-import Contact from "./Contact.jsx";
-import ProjectView from "../components/ProjectView.jsx";
-import { Routes, Route } from "react-router-dom";
-import { useEffect } from "react";
+import Header from './Header.jsx';
+import HeroPage from './HeroPage.jsx';
+import Skills from './Skills.jsx';
+import Portfolio from './Portfolio.jsx';
+import Resume from './Resume.jsx';
+import Contact from './Contact.jsx';
+import ProjectView from '../components/ProjectView.jsx';
+import { Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
 
 // Additionals will come here
 
@@ -20,7 +20,7 @@ const GlassMorphism = ({ setScrollY, setViewingProduct }) => {
   }, []);
 
   return (
-    <div className="flex flex-col  items-center relative snap-y snap-mandatory w-full md:w-[90%] lg:max-w-screen-lg overflow-y-scroll overflow-x-hidden">
+    <div className="flex flex-col  items-center relative sm:snap-y sm:snap-mandatory w-full md:w-[90%] lg:max-w-screen-lg overflow-y-scroll overflow-x-hidden">
       <Header />
 
       <Routes>

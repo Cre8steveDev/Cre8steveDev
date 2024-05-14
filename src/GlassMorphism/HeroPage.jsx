@@ -1,11 +1,11 @@
-import { useInView } from "framer-motion";
-import { useEffect, useRef } from "react";
-import { motion } from "framer-motion";
+import { useInView } from 'framer-motion';
+import { useEffect, useRef } from 'react';
+import { motion } from 'framer-motion';
 
 // eslint-disable-next-line react/prop-types
 const HeroPage = ({ setScrollY }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { amount: "all" });
+  const isInView = useInView(ref, { amount: 'all' });
 
   useEffect(() => {
     setScrollY(0);
@@ -16,7 +16,7 @@ const HeroPage = ({ setScrollY }) => {
     <div
       id="home"
       ref={ref}
-      className="w-full h-screen snap-center min-h-screen overflow-y-scroll flex flex-col justify-center relative overflow-x-hidden"
+      className="w-full sm:h-screen sm:snap-center sm:min-h-screen overflow-y-scroll flex flex-col justify-center relative overflow-x-hidden"
     >
       {/*  */}
       <div className="flex flex-col-reverse sm:flex-col md:flex-row bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl sm:w-[90%] lg:w-full ">
@@ -38,7 +38,7 @@ const HeroPage = ({ setScrollY }) => {
 
           {/* Short introduction */}
           <p className="text-center sm:text-left sm:text-xl text-darkNeutral mb-4 w-[90%] sm:w-full">
-            Stephen is a highly-motivated <b>Full Stack Web Developer</b>{" "}
+            Stephen is a highly-motivated <b>Full Stack Web Developer</b>{' '}
             passionate about building performant and scalable web applications
             with modern and intuitive user interfaces.
           </p>
@@ -48,7 +48,7 @@ const HeroPage = ({ setScrollY }) => {
             <a href="#projects">
               <input
                 type="submit"
-                value={"PORTFOLIO"}
+                value={'PORTFOLIO'}
                 className=" rounded-md p-2 border-2 border-darkBrown text-darkBrown font-bold cursor-pointer mr-5 hover:bg-darkBrown hover:text-darkBlue transition ease-in duration-200 hover:animate-ping text-sm"
               />
             </a>
@@ -56,7 +56,7 @@ const HeroPage = ({ setScrollY }) => {
             <a href="#contact">
               <input
                 type="submit"
-                value={"CONTACT ME"}
+                value={'CONTACT ME'}
                 className=" rounded-md p-2 border-2 border-darkBlue bg-darkBlue text-darkBrown font-bold cursor-pointer  transition ease-in duration-200 hover:animate-ping text-sm"
               />
             </a>
@@ -68,10 +68,10 @@ const HeroPage = ({ setScrollY }) => {
         <motion.p
           initial={{ x: 0 }}
           animate={{
-            x: "-100%",
+            x: '-100%',
             transition: {
               repeat: Infinity,
-              repeatType: "mirror",
+              repeatType: 'mirror',
               duration: 20,
             },
           }}
