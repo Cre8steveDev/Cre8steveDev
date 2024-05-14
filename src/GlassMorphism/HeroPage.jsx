@@ -19,7 +19,7 @@ const HeroPage = ({ setScrollY }) => {
       className="w-full sm:h-screen sm:snap-center sm:min-h-screen overflow-y-scroll flex flex-col justify-center relative overflow-x-hidden mb-1 sm:mb-0"
     >
       {/*  */}
-      <div className="flex flex-col-reverse sm:flex-col md:flex-row bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl sm:w-[90%] lg:w-full mt-[110px]">
+      <div className="flex flex-col-reverse sm:flex-col md:flex-row bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl sm:w-[90%] lg:w-full mt-[80px]">
         <div className="w-full object-cover self-end">
           <img
             src="images/hero_pic.png"

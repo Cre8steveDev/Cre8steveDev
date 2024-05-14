@@ -18,7 +18,7 @@ const Resume = ({ setScrollY }) => {
       className="w-full sm:h-screen sm:snap-center sm:min-h-screen overflow-y-scroll flex flex-col justify-center relative overflow-x-hidden "
     >
       {/*  */}
-      <div className="flex flex-col  bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl gap-4 p-6 text-center mt-[110px] sm:mt-12 items-center sm:w-[90%] lg:w-full">
+      <div className="flex flex-col  bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl gap-4 p-6 text-center mt-[40px] sm:mt-12 items-center sm:w-[90%] lg:w-full">
         <p className="text-darkNeutral tracking-[0.6rem]">
           PROFESSIONAL SUMMARY
         </p>
