@@ -30,7 +30,7 @@ const HeroPage = ({ setScrollY }) => {
 
         {/* Text Container  */}
         <div className="w-full flex flex-col justify-center items-center p-3">
-          <div className="w-full text-center text-4xl  md:text-left md:text-5xl lg:text-6xl font-extrabold mb-4 mt-[200px] sm:mt-0">
+          <div className="w-full text-center text-4xl  md:text-left md:text-5xl lg:text-6xl font-extrabold mb-4 sm:mt-0">
             <p className="w-full text-darkBrown">CREATIVE</p>
             <p className="w-full text-darkNeutral">MERN STACK</p>
             <p className="w-full text-darkBrown">DEVELOPER</p>

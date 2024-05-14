@@ -21,7 +21,7 @@ const Skills = ({ setScrollY }) => {
       className="w-full sm:h-screen sm:snap-center sm:min-h-screen overflow-y-scroll flex flex-col justify-center relative overflow-x-hidden"
     >
       {/*  */}
-      <div className="flex flex-col  bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl gap-4 p-6 text-center mt-[300px] sm:mt-12 items-center text-darkNeutral tracking-[0.6rem] sm:w-[90%] lg:w-full">
+      <div className="flex flex-col  bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl gap-4 p-6 text-center sm:mt-12 items-center text-darkNeutral tracking-[0.6rem] sm:w-[90%] lg:w-full">
         <p className="text-xs sm:text-inherit mt-5 sm:mt-0">
           MY PROFESSIONAL STACK
         </p>
