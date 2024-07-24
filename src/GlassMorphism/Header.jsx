@@ -15,8 +15,8 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="w-[100vw] fixed sm:top-5 z-[5] overflow-x-hidden">
-      <div className="rounded-md w-full mx-auto  max-w-screen-lg flex justify-between items-center shadow-lg mt-2 sm:mt-5 p-6 shadow-['rgba(0, 0, 0, 0.45)'] bg-darkNeutral text-darkBlue overflow-x backdrop-blur-lg">
+    <div className="w-[90vw] fixed z-[5] overflow-x-hidden backdrop-blur-lg">
+      <div className="rounded-md w-full mx-auto  max-w-screen-lg flex justify-between items-center shadow-lg mt-2 sm:mt-5 p-4 shadow-['rgba(0, 0, 0, 0.45)'] bg-darkNeutral text-darkBlue overflow-x backdrop-blur-lg">
         {/*  */}
         {/* Site Logo */}
         <Link to="/">
@@ -41,7 +41,9 @@ const Header = () => {
             <li className="hover:opacity-55 transition ease-out">Resume</li>
           </a>
           <a href="/#contact">
-            <li className="hover:opacity-55 transition ease-out">Contact</li>
+            <li className="hover:opacity-55 transition ease-out hidden md:block">
+              Contact
+            </li>
           </a>
         </nav>
       </div>

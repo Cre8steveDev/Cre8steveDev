@@ -1,54 +1,38 @@
-import { useEffect, useRef } from 'react';
-import { useInView } from 'framer-motion';
-
-// eslint-disable-next-line react/prop-types
-const Resume = ({ setScrollY }) => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { amount: 'all' });
-
-  useEffect(() => {
-    setScrollY(75);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isInView]);
+// Resume Component
+const Resume = () => {
+  // Return JSX For the Component
 
   return (
     <div
       id="resume"
-      ref={ref}
-      className="w-full sm:h-screen sm:snap-center sm:min-h-screen overflow-y-scroll flex flex-col justify-center relative overflow-x-hidden "
+      className="w-[80%] mx-auto md:w-full overflow-y-scroll flex flex-col justify-center relative overflow-x-hidden "
     >
       {/*  */}
-      <div className="flex flex-col  bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl gap-4 p-6 text-center mt-[40px] sm:mt-12 items-center sm:w-[90%] lg:w-full">
-        <p className="text-darkNeutral tracking-[0.6rem]">
-          PROFESSIONAL SUMMARY
-        </p>
+      <div className="flex flex-col mx-auto bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl p-6 text-center mt-[40px] sm:mt-12 items-center sm:w-[90%] lg:w-full">
+        <div className="font-extrabold text-2xl sm:text-4xl text-darkNeutral">
+          <p className="w-full">About Me</p>
+        </div>
 
         {/* Container */}
         <div
           role="container"
-          className="flex flex-col md:flex-row justify-center items-center w-full p-4"
+          className="flex flex-col md:flex-row justify-center sm:px-12 sm:p-4 gap-5"
         >
           <div className="flex flex-col w-full sm:mb-0 mb-5">
-            <img
-              src="images/hero_pic.png"
-              alt="Profile Pic"
-              className="rounded-full bg-slate-500 sm:w-[150px] sm:h-[150px] w-[80px] h-[90px] object-cover mx-auto"
-            />
-            <div className="font-extrabold text-2xl sm:text-4xl text-darkNeutral">
-              <p className="w-full">Stephen</p>
-              <p className="w-full">Omoregie</p>
-            </div>
-            <p className="font-medium text-sm mt-4 text-darkNeutral">
-              Full Stack MERN Developer
+            <p className="text-[13px] sm:text-lg mt-4 text-darkNeutral">
+              What excites me most about software development is the constant
+              evolution of technologies and the opportunity to learn something
+              new every day. I&apos;m particularly drawn to the MERN stack for
+              its flexibility and scalability in building modern web
+              applications. The challenge of turning complex problems into
+              elegant, efficient solutions is what keeps me motivated and
+              engaged in this field.
             </p>
-            <p className="font-medium text-sm text-darkNeutral">
-              Python (Flask & Django)
-            </p>
-            <p className="font-medium text-sm text-darkNeutral">
+
+            {/* About me description */}
+            <p className="font-medium text-[13px] sm:text-lg  mt-4 text-darkNeutral">
+              MERN Stack | React Native (Expo) | Python (Flask & Django) |
               Designer (Graphic and UI)
-            </p>
-            <p className="font-medium text-sm text-darkNeutral mb-6">
-              Video Editor
             </p>
 
             {/* Download Button */}
@@ -59,13 +43,13 @@ const Resume = ({ setScrollY }) => {
               <input
                 type="button"
                 value={'DOWNLOAD RESUME'}
-                className="p-3 bg-darkNeutral backdrop-blur-3xl w-full max-w-[80%] mx-auto rounded-lg cursor-pointer active:animate-ping hover:bg-white hover:text-darkBlue transition ease-in animate-pulse"
+                className="p-3 bg-darkNeutral backdrop-blur-3xl w-full max-w-[80%] mx-auto rounded-lg cursor-pointer active:animate-ping hover:bg-white hover:text-darkBlue transition ease-in animate-pulse mt-8"
               />
             </a>
           </div>
 
           {/* RIGHT HAND SIDE */}
-          <div className="flex flex-col w-full  text-center sm:text-left gap-5 text-darkNeutral ">
+          <div className="flex flex-col sm:w-[400px] text-center sm:text-left gap-5 text-darkNeutral ">
             <section>
               <p className="font-bold">Education</p>
               <h2 className="font-extrabold text-white">

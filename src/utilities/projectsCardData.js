@@ -5,7 +5,7 @@ const myProjects = [
     description:
       'This was yet another exciting learning experience for me. Building a Full Stack Application for my Portfolio project in the ALX Foundations Round up - Truly made me fall in love with TypeScript',
     tools: ['ReactJS', 'TypeScript', 'ExpressJS', 'MongoDB'],
-    name: 'Medikall | Appointment Booking',
+    name: 'Medikall | Appointment App',
     link: 'medikall',
   },
   {

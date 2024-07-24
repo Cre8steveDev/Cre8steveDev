@@ -1,47 +1,24 @@
-import { useEffect, useRef, useState } from 'react';
-import { motion, useInView } from 'framer-motion';
+import { useRef, useState } from 'react';
+import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 
-// eslint-disable-next-line react/prop-types
-const Contact = ({ setScrollY }) => {
-  const ref = useRef(null);
-
-  const isInView = useInView(ref, { amount: 'all' });
+// Definition of the Contact Page Component
+const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
   });
   const [success, setSuccess] = useState(null);
-
+  const [alreadySent, setAlreadySent] = useState(false);
   const formRef = useRef(null);
-
-  useEffect(() => {
-    setScrollY(100);
-  }, [isInView, setScrollY]);
 
   // Handle Send Message
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    setSuccess(null);
-    // emailjs
-    //   .sendForm(
-    //     "service_jipajq5",
-    //     "template_fvie6ra",
-    //     formRef.current,
-    //     "8_TN9LV0t0gro5hJq"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       setSuccess(true);
-    //       result;
-    //     },
-    //     (error) => {
-    //       setError(true);
-    //       error;
-    //     }
-    //   );
+    setSuccess(false);
+
     let templateParams = {
       name: formData.name,
       email: formData.email,
@@ -58,6 +35,7 @@ const Contact = ({ setScrollY }) => {
       .then(
         function (response) {
           setSuccess(true);
+          setAlreadySent(true);
           setFormData({
             name: '',
             email: '',
@@ -68,6 +46,7 @@ const Contact = ({ setScrollY }) => {
         function (error) {
           alert('Sorry, there was an error sending the mail. Please Try again');
           error;
+          setAlreadySent(false);
         }
       );
   };
@@ -76,18 +55,17 @@ const Contact = ({ setScrollY }) => {
   const handleFormChange = (e) => {
     // Handle form change logic
 
-    setSuccess(null);
+    setSuccess(false);
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   return (
     <div
       id="contact"
-      ref={ref}
-      className="w-full sm:h-screen sm:snap-center sm:min-h-screen overflow-y-scroll flex flex-col justify-center relative overflow-x-hidden "
+      className="w-[80%] mx-auto md:w-full overflow-y-scroll flex flex-col justify-center relative overflow-x-hidden mb-4"
     >
       {/*  */}
-      <div className="flex flex-col  bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl gap-4 p-6 text-center mt-[40px] sm:mt-12 items-center text-darkNeutral">
+      <div className="flex flex-col  bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl gap-4 py-6 md:p-6  text-center mt-[40px] sm:mt-12 items-center text-darkNeutral">
         <h2 className="tracking-[0.6rem] sm:text-inherit text-sm">
           READY TO BUILD SOMETHING SPECTACULAR?
         </h2>
@@ -96,7 +74,7 @@ const Contact = ({ setScrollY }) => {
         {/* Container */}
         <div
           role="container"
-          className="flex flex-col md:flex-row justify-center items-center w-full p-4"
+          className="flex flex-col md:flex-row justify-center items-center w-full sm:p-4"
         >
           {/* Left Box Housing Image */}
           <div className="flex flex-col w-full object-cover overflow-hidden">
@@ -178,6 +156,7 @@ const Contact = ({ setScrollY }) => {
 
               <input
                 type="submit"
+                disabled={alreadySent}
                 value={success ? 'Thanks for your message!' : 'SEND MESSSAGE'}
                 className={`w-full p-2  ${
                   success ? 'bg-green-600 disabled' : 'bg-darkBlue'
@@ -188,8 +167,8 @@ const Contact = ({ setScrollY }) => {
             {/*  */}
           </div>
         </div>
-        <div className="sm:text-inherit text-xs ">
-          Designed & Developed by Cre8Steve Dev (Stephen Omoregie)
+        <div className="sm:text-inherit text-xs px-5 ">
+          Designed & Developed by Cre8Steve Dev (cre8stevedev@gmail.com)
         </div>
       </div>
     </div>

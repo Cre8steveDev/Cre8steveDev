@@ -1,56 +1,49 @@
-import { useEffect, useRef } from 'react';
-import { useInView } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 import myProjects from '../utilities/projectsCardData';
 
-// eslint-disable-next-line react/prop-types
-const Portfolio = ({ setScrollY }) => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { amount: 'all' });
-
-  useEffect(() => {
-    setScrollY(50);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isInView]);
-
+const Portfolio = () => {
+  // Return JSX For the Portfolio
   return (
     <div
       id="projects"
-      ref={ref}
-      className="w-full sm:h-screen sm:snap-center sm:min-h-screen overflow-y-scroll flex flex-col justify-center relative overflow-x-hidden "
+      className="w-[80%] mx-auto md:w-full overflow-y-scroll flex flex-col relative overflow-x-hidden"
     >
       {/*  */}
-      <div className="flex flex-col  bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl gap-4 p-6 text-center mt-[40px] sm:mt-12 items-center text-darkNeutral sm:w-[90%] lg:w-full ">
+      <div className="flex flex-col bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl gap-4 p-4 text-center mt-[40px] sm:mt-8 items-center text-darkNeutral sm:w-[90%] lg:w-full sm:mx-auto">
+        {/*  */}
         {/* <div className="h-[800px] sm:h-0 sm:hidden"></div> */}
-        <h2 className="tracking-[0.6rem] sm:mt-0">MY PORTFOLIO</h2>
-        <p className="max-w-2xl text-sm sm:text-md">
-          Here are some of my featured projects showcasing my experience as a
-          professional Web Developer with a versatile skills in programming,
-          problem-solving, design and more.
+        <h2 className="tracking-[0.6rem] sm:mt-0">FEATURED PROJECTS</h2>
+        <p className="max-w-2xl text-xs sm:text-lg">
+          Each project demonstrates my ability to transform complex requirements
+          into elegant, user-friendly solutions. Click on a project to view
+          details on the technologies used, my role, and the challenges
+          overcome.
         </p>
 
         {/* Projects Container  */}
-        <div className=" w-full p-4 flex flex-row flex-wrap sm:h-[550px] overflow-x-hidden overflow-y-visible justify-center gap-5">
+        <div className=" w-full p-4 flex flex-row flex-wrap overflow-x-hidden overflow-y-visible justify-center gap-5">
           {/* Create Array of Projects and map through */}
           {myProjects.map((proj, idx) => (
             <div
               key={idx}
-              className="min-w-[300px] w-full max-w-[350px]  text-white rounded-xl overflow-hidden hover:shadow-2xl transition ease-in backdrop-blur-2xl bg-white bg-opacity-0"
+              className="min-w-[300px] w-full max-w-[350px] text-white rounded-xl overflow-hidden hover:shadow-2xl transition ease-in backdrop-blur-2xl bg-white bg-opacity-0"
             >
               <Link to={`/project/${proj.link}`}>
                 <img
                   src={proj.image}
                   alt=""
-                  className="w-full"
+                  className="w-full rounded-md"
                   loading="lazy"
                 />
-                <div className="p-3">
-                  <h2 className="font-extrabold text-xl">{proj.name}</h2>
+                <div className="p-3 ">
+                  <h2 className="font-extrabold sm:text-xl p-2">{proj.name}</h2>
                   {proj.description !== '' && (
-                    <p className="text-sm">Click To View Details</p>
+                    <p className="text-xs sm:text-sm -mt-2">
+                      Click To View Details
+                    </p>
                   )}
-                  <p className="text-sm my-3 w-[90%] mx-auto">
+                  <p className="text-xs sm:text-sm my-3 w-[90%] mx-auto">
                     {proj.description}
                   </p>
                   <div>
@@ -75,7 +68,7 @@ const Portfolio = ({ setScrollY }) => {
                           key={idx}
                           type="button"
                           value={tool}
-                          className={`p-1 mr-2 ${colorr} rounded-md text-xs hover:animate-pulse`}
+                          className={`p-1 mr-2 ${colorr} rounded-md text-[10px] sm:text-xs hover:animate-pulse`}
                         />
                       );
                     })}

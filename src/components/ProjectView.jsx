@@ -60,11 +60,11 @@ const ProjectView = ({ setViewingProduct }) => {
   }, [locationData]);
 
   return proj ? (
-    <div className="w-full h-full sm:snap-center min-h-full overflow-y-scroll flex flex-col justify-center relative overflow-x-hidden mt-3 sm:mt-0">
+    <div className="w-[80%] sm:w-full overflow-y-scroll flex flex-col justify-center relative overflow-x-hidden mt-3 sm:mt-0">
       {/*  */}
       <div
         ref={containerRef}
-        className="flex flex-col bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl p-6 text-center mt-16 sm:mt-32 items-center text-darkNeutral  overflow-y-scroll"
+        className="flex flex-col bg-white bg-opacity-[10%] backdrop-blur-xl rounded-2xl md:p-6 text-center mt-16 sm:mt-32 items-center text-darkNeutral  overflow-y-scroll"
       >
         {/* Image and Short Stats starts here */}
         <section className="w-full">
@@ -95,7 +95,7 @@ const ProjectView = ({ setViewingProduct }) => {
                   key={idx}
                   type="button"
                   value={stack}
-                  className={`p-1 mr-2 ${colorr} rounded-md text-xs hover:animate-pulse`}
+                  className={`p-1 mr-2 ${colorr} rounded-md text-[10px] sm:text-xs hover:animate-pulse`}
                 />
               );
             })}
@@ -111,11 +111,11 @@ const ProjectView = ({ setViewingProduct }) => {
         </section>
 
         {/* Live Link and Github link here || Next and Previous */}
-        <section className="flex gap-3 mt-4 flex-wrap justify-center items-center">
+        <section className="flex gap-3 mt-4 flex-wrap justify-center items-center mb-10">
           {/* Handle Previous Project View */}
           {currentIndex > 0 && (
             <button
-              className="bg-white text-xs sm:text-sm text-slate-900 p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl"
+              className="bg-white text-[10px] sm:text-sm text-slate-900 p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl"
               onClick={handlePrevious}
             >
               Previous
@@ -123,14 +123,14 @@ const ProjectView = ({ setViewingProduct }) => {
           )}
           {/* Live project Link */}
           <a href={proj.liveUrl} target="_blank" rel="noreferrer">
-            <button className="bg-red-700 text-xs sm:text-sm p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl">
+            <button className="bg-red-700 text-[10px] sm:text-sm p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl">
               Live Link
             </button>
           </a>
 
           {/* Github Code link */}
           <a href={proj.githubUrl} target="_blank" rel="noreferrer">
-            <button className="bg-black text-xs sm:text-sm p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl">
+            <button className="bg-black text-[10px] sm:text-sm p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl">
               GitHub
             </button>
           </a>
@@ -138,7 +138,7 @@ const ProjectView = ({ setViewingProduct }) => {
           {/* Handle Next Project View */}
           {currentIndex < 6 && (
             <button
-              className="bg-white text-xs sm:text-sm text-slate-900 p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl"
+              className="bg-white text-[10px] sm:text-sm text-slate-900 p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl"
               onClick={handleNext}
             >
               Next
@@ -146,7 +146,7 @@ const ProjectView = ({ setViewingProduct }) => {
           )}
           {/* Go Back Home */}
           <a href="/">
-            <button className="bg-darkBlue text-xs sm:text-sm text-slate-50 p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl">
+            <button className="bg-darkBlue text-[10px] sm:text-sm text-slate-50 p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl">
               Back to Home
             </button>
           </a>
