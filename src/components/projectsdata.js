@@ -1,8 +1,62 @@
 const projectsdata = [
   {
+    projName: 'Naijarium Forum',
+    id: 'naijarium',
+    imgUrl:
+      'https://res.cloudinary.com/dg0qc5gkl/image/upload/v1721909704/Portfolio/naijarium-big_h49qef.png',
+    liveUrl: 'https://github.com/Cre8steveDev',
+    stacks: ['NextJS', 'TypeScript', 'NextAuth', 'MongoDB'],
+    projDescription: `Naijarium is a Social Media Forum for Nigerians, designed to be a platform that promotes free speech without hate, tribalism, and bullying. It aims to provide a truly democratic social media space where users can express themselves freely.
+    
+    Technologies Used
+    - Next.js: A React framework for building server-side rendered and static websites.
+    - MongoDB: A NoSQL database for storing and retrieving data.
+    - Other modern technologies: [TailwindCSS, NextAuth, React-Icons, ...]
+    `,
+    githubUrl: 'https://github.com/Cre8steveDev/naijarium',
+  },
+
+  {
+    projName: 'Salonix Salon Appointment App',
+    id: 'salonix',
+    imgUrl:
+      'https://res.cloudinary.com/dg0qc5gkl/image/upload/v1721906144/Portfolio/salonix-big_v1jbrk.png',
+    liveUrl: 'https://github.com/Cre8steveDev',
+    stacks: ['React Native', 'ExpressJS', 'MongoDB', 'JWT'],
+    projDescription: `I am building Solanix as a full-feature personal challenge project to improve my skills and knowledge as a MERN Stack Developer transitioning from the Web to building Cross-platform Native applications. 
+    
+    I'm equally using these Mobile App projects to solidify my skills in Design (coming from print and marketing design, venturing into UI/UX Design has been exciting and I'm enjoying it - this is a custom design, as seen below. Might update it more - or not, hehe).
+
+    Features
+    - User-friendly interface for browsing and booking salon services ✅
+    - Real-time availability of service slots ✅
+    - Secure payment integration using Paystack ✅
+    - Scrollable Calendar UI for easy date selection ✅
+    - Push notifications for appointment reminders (TODO)
+    - User profile management (TODO)
+    - Booking history and status tracking (...partly done)
+    `,
+    githubUrl: 'https://github.com/Cre8steveDev/Salonix-Mobile-App',
+  },
+
+  {
+    projName: 'Quotix Mobile App',
+    id: 'quotix',
+    imgUrl:
+      'https://res.cloudinary.com/dg0qc5gkl/image/upload/v1721906154/Portfolio/quotix-big_lorce9.png',
+    liveUrl: 'https://github.com/Cre8steveDev',
+    stacks: ['React Native', 'TypeScript', 'Firebase'],
+    projDescription: `My Hands on project for learning React Native by Building. Exciting for the littue nuances I've picked up so far. From Selectively rendering styles based on the platform the app is running on, to using the Image component from expo-image that helps streamline using images in the app.
+    `,
+    githubUrl: 'https://github.com/Cre8steveDev/Quotix',
+  },
+
+  // Old Ones Beging Here from Medikall Landing Page
+  {
     projName: 'Medikall | Landing Page',
     id: 'medikall_landing',
-    imgUrl: '/projects/medikall_landing_big.png',
+    imgUrl:
+      'https://res.cloudinary.com/dg0qc5gkl/image/upload/v1721906147/Portfolio/medikall_landing_big_kzn3y0.png',
     liveUrl: 'https://info-medikall.netlify.app/',
     stacks: ['ReactJS', 'TypeScript', 'TailwindCSS'],
     projDescription: `Medikall wasn't just another project for my portfolio presentation, it was a learning odyssey. As a software engineering student at the prestigious Alx Software Engineering Program (Foundation), I was eager to apply my newfound knowledge to a real-world project. Medikall became the perfect canvas to experiment, iterate, and push my boundaries.
@@ -14,7 +68,8 @@ const projectsdata = [
   {
     projName: 'Medikall | Appointment Booking',
     id: 'medikall',
-    imgUrl: '/projects/medikall_big.png',
+    imgUrl:
+      'https://res.cloudinary.com/dg0qc5gkl/image/upload/v1721906167/Portfolio/medikall_big_mpwmc7.png',
     liveUrl: 'https://new-medikall.onrender.com/',
     stacks: ['ReactJS', 'TypeScript', 'ExpressJS', 'MongoDB'],
     projDescription: `Medikall is a full-feature MERN Stack Powered web application that seeks to revolutionize medical appointments with health facilities. For adopters of the platform, it can serve as a Saas that helps to streamline how patients book appointments seamlessly without the inconvenience of crowded General Practice Clinic reception halls.
@@ -40,7 +95,8 @@ const projectsdata = [
   {
     projName: 'Green Shopper eCommerce',
     id: 'greenshopper',
-    imgUrl: '/projects/greenshopper_big.png',
+    imgUrl:
+      'https://res.cloudinary.com/dg0qc5gkl/image/upload/v1721906167/Portfolio/greenshopper_big_pcy0l6.png',
     liveUrl: 'https://greenshopper-steven.onrender.com/',
     stacks: ['ReactJS', 'ExpressJS', 'MongoDB', 'TailwindCSS'],
     projDescription: `Green Shopper is a ReactJS-powered web application designed to empower eco-conscious consumers. Leveraging a modern tech stack and intuitive UI/UX, it connects users with sustainable local businesses and products.
@@ -73,7 +129,8 @@ const projectsdata = [
   {
     projName: 'Clear Link | Landing Page',
     id: 'clearlink',
-    imgUrl: '/projects/clearlink_big.png',
+    imgUrl:
+      'https://res.cloudinary.com/dg0qc5gkl/image/upload/v1721906171/Portfolio/clearlink_big_aewkre.png',
     liveUrl: 'https://clearlink-cre8stevedev.netlify.app/',
     stacks: ['ReactJS', 'Tailwind'],
     projDescription: `This landing page serves as a demonstration of my front-end development skills using ReactJS and TailwindCSS. The project simulates a potential landing page for ClearLink, a video conferencing tool.
@@ -98,7 +155,8 @@ const projectsdata = [
   {
     projName: 'Convata | Free PDF Tool',
     id: 'convata',
-    imgUrl: '/projects/convata_big.png',
+    imgUrl:
+      'https://res.cloudinary.com/dg0qc5gkl/image/upload/v1721906146/Portfolio/convata_big_xzcejv.png',
     liveUrl: 'https://convata.onrender.com/',
     stacks: ['Flask', 'Python', 'Jinja Templating'],
     projDescription: `Convata is a full-stack web application I built from the ground up to simplify PDF conversions while preserving the original content and structure, safely and with ease.  This open-source project on showcases my proficiency in Python web development and backend functionalities.
@@ -128,7 +186,8 @@ const projectsdata = [
   {
     projName: 'Cre8Stevedev.me - Portfolio',
     id: 'portfolio',
-    imgUrl: '/projects/portfolio_big.png',
+    imgUrl:
+      'https://res.cloudinary.com/dg0qc5gkl/image/upload/v1721906149/Portfolio/portfolio_big_cgtmxj.png',
     liveUrl: 'https://cre8stevedev.me',
     stacks: ['ReactJS', 'Framer Motion', 'TailwindCSS'],
     projDescription: `Welcome to Cre8stevedev.me, my online playground where I showcase my journey as a passionate Full-Stack Web Developer!
@@ -158,7 +217,8 @@ const projectsdata = [
   {
     projName: 'Healthor - AI Chat Diagnosis',
     id: 'healthor',
-    imgUrl: '/projects/healthor_big.png',
+    imgUrl:
+      'https://res.cloudinary.com/dg0qc5gkl/image/upload/v1721906168/Portfolio/healthor_big_qn9feh.png',
     liveUrl: 'https://healthor-ai.netlify.app/',
     stacks: ['ReactJS', 'OpenAI', 'Google Maps'],
     projDescription: `Healthor is a web-based AI-powered medical diagnosis system designed to enhance access to healthcare and empower individuals to take control of their well-being. It leverages the power of OpenAI's GPT-3.5 Turbo model to provide conversational symptom analysis and potential diagnoses.

@@ -19,11 +19,11 @@ export const backEndSkills = [
 
 export const tools = [
   { img: 'icons/linux.png', title: 'Linux & Bash Scripting' },
-  { img: 'icons/davinciresolve.png', title: 'EAS & Expo Go' },
+  { img: 'icons/git.png', title: 'Git | Version Control' },
+  { img: 'icons/expo.webp', title: 'EAS & Expo Go' },
   { img: 'icons/figma.png', title: 'Figma UI Design' },
   { img: 'icons/photoshop.png', title: 'Photoshop' },
-  { img: 'icons/premierepro.png', title: 'Premiere Pro' },
-  { img: 'icons/git.png', title: 'Git | Version Control' },
-  { img: 'icons/davinciresolve.png', title: 'Davinci Resolve' },
   { img: 'icons/coreldraw.png', title: 'Corel Draw' },
+  { img: 'icons/premierepro.png', title: 'Premiere Pro' },
+  { img: 'icons/davinciresolve.png', title: 'Davinci Resolve' },
 ];
