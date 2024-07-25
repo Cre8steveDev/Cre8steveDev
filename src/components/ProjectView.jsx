@@ -18,6 +18,9 @@ const ProjectView = ({ setViewingProduct }) => {
     'healthor',
     'medikall',
     'medikall_landing',
+    'naijarium',
+    'quotix',
+    'salonix',
   ];
   let currentIndex = projectsArray.indexOf(param);
 
@@ -33,7 +36,7 @@ const ProjectView = ({ setViewingProduct }) => {
     // Handle previous logic
 
     if (!currentIndex) {
-      navigate(`/project/${projectsArray[6]}`);
+      navigate(`/project/${projectsArray[9]}`);
     } else {
       --currentIndex;
       navigate(`/project/${projectsArray[currentIndex]}`);
@@ -42,7 +45,7 @@ const ProjectView = ({ setViewingProduct }) => {
 
   const handleNext = () => {
     // Handle Next Logic
-    if (currentIndex >= 6) {
+    if (currentIndex >= 9) {
       navigate(`/project/${projectsArray[0]}`);
     } else {
       ++currentIndex;
@@ -136,7 +139,7 @@ const ProjectView = ({ setViewingProduct }) => {
           </a>
 
           {/* Handle Next Project View */}
-          {currentIndex < 6 && (
+          {currentIndex < 9 && (
             <button
               className="bg-white text-[10px] sm:text-sm text-slate-900 p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl"
               onClick={handleNext}
