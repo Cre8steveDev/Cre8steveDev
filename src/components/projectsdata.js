@@ -8,10 +8,14 @@ const projectsdata = [
     stacks: ['NextJS', 'TypeScript', 'NextAuth', 'MongoDB'],
     projDescription: `Naijarium is a Social Media Forum for Nigerians, designed to be a platform that promotes free speech without hate, tribalism, and bullying. It aims to provide a truly democratic social media space where users can express themselves freely.
     
-    Technologies Used
-    - Next.js: A React framework for building server-side rendered and static websites.
-    - MongoDB: A NoSQL database for storing and retrieving data.
-    - Other modern technologies: [TailwindCSS, NextAuth, React-Icons, ...]
+    Key Learning Points:
+
+    1. Developed a responsive and interactive user interface using React and NextJS for server-side rendering and improved SEO.
+    2. Implemented dynamic routing and page generation with NextJS for efficient content management.
+    3. Utilized TailwindCSS for rapid UI development and consistent design across the platform.
+    4. Implemented user authentication and authorization using NextAuth for secure access to certain features.
+    5. Designed and implemented a flexible MongoDB schema to efficiently store and retrieve users data and content.
+
     `,
     githubUrl: 'https://github.com/Cre8steveDev/naijarium',
   },
@@ -23,18 +27,19 @@ const projectsdata = [
       'https://res.cloudinary.com/dg0qc5gkl/image/upload/v1721906144/Portfolio/salonix-big_v1jbrk.png',
     liveUrl: 'https://github.com/Cre8steveDev',
     stacks: ['React Native', 'ExpressJS', 'MongoDB', 'JWT'],
-    projDescription: `I am building Solanix as a full-feature personal challenge project to improve my skills and knowledge as a MERN Stack Developer transitioning from the Web to building Cross-platform Native applications. 
+    projDescription: `I built Solanix as a full-feature personal challenge project to improve my skills and knowledge as a MERN Stack Developer transitioning from the Web to building Cross-platform Native applications. 
     
-    I'm equally using these Mobile App projects to solidify my skills in Design (coming from print and marketing design, venturing into UI/UX Design has been exciting and I'm enjoying it - this is a custom design, as seen below. Might update it more - or not, hehe).
+    Key Learning Points:
 
-    Features
-    - User-friendly interface for browsing and booking salon services ✅
-    - Real-time availability of service slots ✅
-    - Secure payment integration using Paystack ✅
-    - Scrollable Calendar UI for easy date selection ✅
-    - Push notifications for appointment reminders (TODO)
-    - User profile management (TODO)
-    - Booking history and status tracking (...partly done)
+    Frontend (React Native and Expo):
+    1. Developed a cross-platform mobile application using React Native and Expo for rapid development and easy deployment.
+    2. Implemented complex UI components like calendars, receipt systems, and image galleries using React Native libraries.
+    3. Utilized Redux for state management, ensuring a smooth and responsive user experience across the app.
+
+    Backend (Node.js, Express, and MongoDB):
+    1. Created a scalable RESTful API using Node.js and Express to handle user authentication, appointment scheduling, and payment processing.
+    2. Implemented an efficient data model/schema using MongoDB to efficiently manage user data, and appointment information.
+    3. Integrated Paystack Payment SDK for secure payment processing and handling of financial transactions.
     `,
     githubUrl: 'https://github.com/Cre8steveDev/Salonix-Mobile-App',
   },
@@ -47,6 +52,13 @@ const projectsdata = [
     liveUrl: 'https://github.com/Cre8steveDev',
     stacks: ['React Native', 'TypeScript', 'Firebase'],
     projDescription: `My Hands on project for learning React Native by Building. Exciting for the littue nuances I've picked up so far. From Selectively rendering styles based on the platform the app is running on, to using the Image component from expo-image that helps streamline using images in the app.
+
+    Key Learning Points:
+
+    1. Developed a visually appealing and performant mobile app using React Native ensuring a consistent experience across iOS and Android platforms.
+    2. Integrated local storage solutions (react-native-async-storage) for offline functionalities and user preference.
+    3. Leveraged firebase autentication for secure user signup and login processes, as well as firestore for data storage.
+
     `,
     githubUrl: 'https://github.com/Cre8steveDev/Quotix',
   },

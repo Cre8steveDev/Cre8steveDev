@@ -145,11 +145,12 @@ const ProjectView = ({ setViewingProduct }) => {
             </button>
           )}
           {/* Go Back Home */}
-          <a href="/">
-            <button className="bg-darkBlue text-[10px] sm:text-sm text-slate-50 p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl">
-              Back to Home
-            </button>
-          </a>
+          <button
+            className="bg-darkBlue text-[10px] sm:text-sm text-slate-50 p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl"
+            onClick={() => navigate('/')}
+          >
+            Back to Home
+          </button>
         </section>
       </div>
     </div>

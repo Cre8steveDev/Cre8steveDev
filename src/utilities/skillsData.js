@@ -20,7 +20,7 @@ export const backEndSkills = [
 export const tools = [
   { img: 'icons/linux.png', title: 'Linux & Bash Scripting' },
   { img: 'icons/git.png', title: 'Git | Version Control' },
-  { img: 'icons/expo.webp', title: 'EAS & Expo Go' },
+  { img: 'icons/sdk.png', title: 'EAS & Expo Go' },
   { img: 'icons/figma.png', title: 'Figma UI Design' },
   { img: 'icons/photoshop.png', title: 'Photoshop' },
   { img: 'icons/coreldraw.png', title: 'Corel Draw' },

@@ -8,15 +8,17 @@ import { motion } from 'framer-motion';
 import GlassMorphism from './GlassMorphism/GlassMorphism';
 import SocialLinks from './components/SocialLinks.jsx';
 import RandomQuote from './RandomQuote/RandomQuote.jsx';
+import { useLocation } from 'react-router-dom';
 
 function App() {
   const [scrollY, setScrollY] = useState(0);
   const [glassMorphism, setGlassMorphism] = useState(true);
   const [viewingProduct, setViewingProduct] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     setViewingProduct(false);
-  }, []);
+  }, [location]);
 
   //  Define Dynamic Class for App Container
   const bgImage = glassMorphism ? `background_2.jpg` : `background.jpg`;

@@ -31,8 +31,8 @@ const Resume = () => {
 
             {/* About me description */}
             <p className="font-medium text-[13px] sm:text-lg  mt-4 text-darkNeutral">
-              MERN Stack | React Native (Expo) | Python (Flask & Django) |
-              Designer (Graphic and UI)
+              MERN Stack | React Native (Expo) | Python (Flask) | Designer
+              (Graphic and UI)
             </p>
 
             {/* Download Button */}

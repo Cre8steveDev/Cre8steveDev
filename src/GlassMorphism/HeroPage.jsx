@@ -13,14 +13,13 @@ const HeroPage = () => {
           <img
             src="images/hero_pic.png"
             alt="Stephen Omoregie Profile Photo"
-            loading="lazy"
             className="w-[80%] sm:w-full mx-auto sm:mx-0 hidden sm:block"
           />
+
           {/* Image for mobile Screen */}
           <img
             src="images/hero_pic_mobile.png"
             alt="Stephen Omoregie Profile Photo"
-            loading="lazy"
             className="w-[80%] sm:w-full mx-auto sm:mx-0 sm:hidden"
           />
         </div>
@@ -36,15 +35,14 @@ const HeroPage = () => {
           {/* Short introduction */}
           <p className="text-center sm:text-left text-[13px] sm:text-md md:text-base lg:text-lg text-darkNeutral mb-4 w-[90%] sm:w-full">
             Hi, I am Stephen, a passionate{' '}
-            <b>Full Stack Mobile and Web Developer</b> with a background in
-            Computer Science. My journey in tech is driven by a desire to create
-            innovative, user-friendly applications that solve real-world
-            problems.
+            <b>Full Stack Mobile and Web Developer</b> (Frontend Heavy 😁). My
+            journey in tech is driven by a desire to create innovative,
+            user-friendly applications that solve real-world problems.
           </p>
 
           {/* Short Introduction Two */}
           <p className="text-center sm:text-left text-[13px] sm:text-md md:text-base lg:text-lg text-darkNeutral mb-4 w-[90%] sm:w-full">
-            With a B.Sc. in Computer Science and training as a Full Stack
+            With a degree in Computer Science and training as a Full Stack
             Software Engineer with ALX Africa, I&apos;ve built a solid
             foundation in both theoretical knowledge and practical skills. My
             skill set spans from frontend and backend development to UI and
