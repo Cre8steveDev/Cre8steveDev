@@ -4,17 +4,19 @@ const projectsdata = [
     id: 'naijarium',
     imgUrl:
       'https://res.cloudinary.com/dg0qc5gkl/image/upload/v1721909704/Portfolio/naijarium-big_h49qef.png',
-    liveUrl: 'https://github.com/Cre8steveDev',
+    liveUrl: 'https://naijarium.vercel.app',
     stacks: ['NextJS', 'TypeScript', 'NextAuth', 'MongoDB'],
     projDescription: `Naijarium is a Social Media Forum for Nigerians, designed to be a platform that promotes free speech without hate, tribalism, and bullying. It aims to provide a truly democratic social media space where users can express themselves freely.
     
     Key Learning Points:
 
-    1. Developed a responsive and interactive user interface using React and NextJS for server-side rendering and improved SEO.
+    1. Developed a responsive and interactive user interface using React and NextJS for server-side rendering.
     2. Implemented dynamic routing and page generation with NextJS for efficient content management.
     3. Utilized TailwindCSS for rapid UI development and consistent design across the platform.
     4. Implemented user authentication and authorization using NextAuth for secure access to certain features.
     5. Designed and implemented a flexible MongoDB schema to efficiently store and retrieve users data and content.
+    6. Implemented a robust Search Engine Optimization for the site. Creating dynamic meta data for pages and Open Graph Protocols for Social Sharing.
+
 
     `,
     githubUrl: 'https://github.com/Cre8steveDev/naijarium',
