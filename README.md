@@ -7,11 +7,9 @@
 
 I'm a Full Stack JavaScript Developer with a passion for creating web and mobile applications. As an ALX trained Full Stack Software Engineer, I bring a unique blend of technical expertise and creative problem-solving to every project.
 
-- 🚀 Full Stack JavaScript Developer (Web and Mobile Apps)
-- 🎨 Graphic Designer with expertise in Adobe Creative Suite and Corel Draw
-- 🌱 Continuously learning and improving my stack
-- 🤝 Open to collaborations on team projects and open-source initiatives
-- ✍️ Technical writer sharing knowledge with the community
+- Full Stack JavaScript Developer (Web and Mobile Apps)
+- Open to collaborations on team projects and open-source initiatives
+- Technical writer sharing knowledge with the community
 
 ## 🛠️ Tech Stack
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
