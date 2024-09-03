@@ -47,6 +47,9 @@ I'm always excited to work on new projects that challenge me and allow me to con
 - GitHub: [@Cre8steveDev](https://github.com/Cre8steveDev)
 - Gmail: [cre8stevedev@gmail.com](mailto:cre8stevedev@gmail.com)
 
+## 📫 Checkout my articles
+
+- dev.to: [@Cre8steveDev](https://dev.to/cre8stevedev)
 ---
 
 ⭐️ From [Cre8steveDev](https://github.com/Cre8steveDev)
