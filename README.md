@@ -3,14 +3,14 @@
 [![Twitter: Cre8steveDev](https://img.shields.io/twitter/follow/Cre8steveDev?style=social)](https://twitter.com/Cre8steveDev)
 [![GitHub Cre8steveDev](https://img.shields.io/github/followers/Cre8steveDev?label=follow&style=social)](https://github.com/Cre8steveDev)
 
-## 👨‍💻 About Me
+## About Me
 
 I'm a Full Stack JavaScript Developer with a passion for creating web and mobile applications. As an ALX trained Full Stack Software Engineer, I bring a unique blend of technical expertise and creative problem-solving to every project.
 
 - Open to collaborations on team projects and open-source initiatives
 - Technical writer sharing knowledge with the community
 
-## 🛠️ Tech Stack
+## Tech Stack
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
@@ -32,10 +32,10 @@ I'm a Full Stack JavaScript Developer with a passion for creating web and mobile
 
 ## 🎯 Current Focus
 
-- 🔥 Improving my skills in JavaScript and its ecosystems
-- 🐍 Exploring Python/Flask for backend development
-- 🌐 Contributing to open-source projects
-- 📝 Writing technical articles to share knowledge
+- Improving my skills in JavaScript and its ecosystems
+- Exploring Python/Flask for backend development
+- Contributing to open-source projects
+- Writing technical articles to share knowledge
 
 ## 💼 Looking to Collaborate
 
