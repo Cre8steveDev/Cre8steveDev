@@ -47,9 +47,9 @@ I'm always excited to work on new projects that challenge me and allow me to con
 - [LinkedIn](https://www.linkedin.com/in/stephen-omoregie/)
 - [cre8stevedev@gmail.com](mailto:cre8stevedev@gmail.com)
 
-## 📫 Checkout my articles on DEV.to
+## Checkout my articles on DEV.to
 
-- [Check it Out](https://dev.to/cre8stevedev)
+- [https://dev.to/cre8stevedev](https://dev.to/cre8stevedev)
 ---
 
 ⭐️ From [Cre8steveDev](https://github.com/Cre8steveDev)
