@@ -43,13 +43,13 @@ I'm always excited to work on new projects that challenge me and allow me to con
 
 ## 📫 How to Reach Me
 
-- Twitter: [@Cre8steveDev](https://twitter.com/Cre8steveDev)
-- GitHub: [@Cre8steveDev](https://github.com/Cre8steveDev)
-- Gmail: [cre8stevedev@gmail.com](mailto:cre8stevedev@gmail.com)
+- [Twitter](https://twitter.com/Cre8steveDev)
+- [LinkedIn](https://www.linkedin.com/in/stephen-omoregie/)
+- [cre8stevedev@gmail.com](mailto:cre8stevedev@gmail.com)
 
-## 📫 Checkout my articles
+## 📫 Checkout my articles on DEV.to
 
-- dev.to: [@Cre8steveDev](https://dev.to/cre8stevedev)
+- [Check it Out](https://dev.to/cre8stevedev)
 ---
 
 ⭐️ From [Cre8steveDev](https://github.com/Cre8steveDev)
