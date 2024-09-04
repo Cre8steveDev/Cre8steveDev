@@ -1,4 +1,4 @@
-### 👋 Hi there! I'm Stephen (@Cre8steveDev)
+### 👋 Hi there! I'm Stephen
 
 [![Twitter: Cre8steveDev](https://img.shields.io/twitter/follow/Cre8steveDev?style=social)](https://twitter.com/Cre8steveDev)
 [![GitHub Cre8steveDev](https://img.shields.io/github/followers/Cre8steveDev?label=follow&style=social)](https://github.com/Cre8steveDev)
