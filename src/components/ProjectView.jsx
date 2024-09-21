@@ -21,6 +21,7 @@ const ProjectView = ({ setViewingProduct }) => {
     'naijarium',
     'quotix',
     'salonix',
+    'joobz',
   ];
   let currentIndex = projectsArray.indexOf(param);
 
@@ -36,7 +37,7 @@ const ProjectView = ({ setViewingProduct }) => {
     // Handle previous logic
 
     if (!currentIndex) {
-      navigate(`/project/${projectsArray[9]}`);
+      navigate(`/project/${projectsArray[10]}`);
     } else {
       --currentIndex;
       navigate(`/project/${projectsArray[currentIndex]}`);
@@ -45,7 +46,7 @@ const ProjectView = ({ setViewingProduct }) => {
 
   const handleNext = () => {
     // Handle Next Logic
-    if (currentIndex >= 9) {
+    if (currentIndex >= 10) {
       navigate(`/project/${projectsArray[0]}`);
     } else {
       ++currentIndex;
@@ -107,7 +108,7 @@ const ProjectView = ({ setViewingProduct }) => {
 
         {/* Description Starts here */}
         <section className="w-full text-left mt-4 text-white bg-black p-4 rounded-lg bg-opacity-40">
-          <h2 className="text-center font-extrabold">My Learning Points</h2>
+          <h2 className="text-center font-extrabold">Project Description</h2>
           <p className="hyphens-auto sm:p-[90px] sm:py-3 text-xs sm:text-lg whitespace-pre-line">
             {proj.projDescription}
           </p>
@@ -127,7 +128,7 @@ const ProjectView = ({ setViewingProduct }) => {
           {/* Live project Link */}
           <a href={proj.liveUrl} target="_blank" rel="noreferrer">
             <button className="bg-red-700 text-[10px] sm:text-sm p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl">
-              Live Link
+              Demo Link
             </button>
           </a>
 
@@ -139,7 +140,7 @@ const ProjectView = ({ setViewingProduct }) => {
           </a>
 
           {/* Handle Next Project View */}
-          {currentIndex < 9 && (
+          {currentIndex < 10 && (
             <button
               className="bg-white text-[10px] sm:text-sm text-slate-900 p-1 px-2 rounded-lg hover:scale-90 transition ease-in hover:shadow-xl"
               onClick={handleNext}

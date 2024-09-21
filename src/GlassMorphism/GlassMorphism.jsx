@@ -9,6 +9,7 @@ import ProjectView from '../components/ProjectView.jsx';
 import { Routes, Route } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
 import { useInView } from 'framer-motion';
+import OpenSourceContributions from './OpenSource.jsx';
 
 // eslint-disable-next-line react/prop-types
 const GlassMorphism = ({ setScrollY, setViewingProduct }) => {
@@ -71,6 +72,10 @@ const GlassMorphism = ({ setScrollY, setViewingProduct }) => {
 
               <div ref={projectRef}>
                 <Portfolio />
+              </div>
+
+              <div>
+                <OpenSourceContributions />
               </div>
 
               <div ref={resumeRef}>

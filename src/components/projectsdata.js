@@ -1,5 +1,27 @@
 const projectsdata = [
   {
+    projName: 'Joobz (Errands and Service App)',
+    id: 'joobz',
+    imgUrl:
+      'https://res.cloudinary.com/dg0qc5gkl/image/upload/v1726939246/joobz_vjmgu5.png',
+    liveUrl: 'https://youtu.be/dDdNsUMZqWY',
+    stacks: ['React Native', 'Expo', 'TypeScript', 'ExpressJS', 'MongoDB'],
+    projDescription: `Joobz is an innovative platform designed to seamlessly connect users with vetted, high-quality professionals and artisans for a wide range of services and errands. Our mission is to revolutionize how people find help, ensuring a smooth, reliable, and secure experience for both service seekers and providers.
+    
+    Key Features:
+    1. Dual Registration: Users can join as service seekers or freelancers, fostering a dynamic community of both clients and professionals.
+    2. Verified Professionals: All service providers undergo a thorough vetting process, ensuring quality and trustworthiness.
+    3. Secure Transactions: Our platform facilitates safe, transparent financial exchanges between users and freelancers by using an escrow system.
+    4. Wide Service Range: From home repairs, car repairs, skilled services to personal errands, Joobz covers a diverse array of service categories.
+    5. User-Friendly Interface: Intuitive design makes it easy to post jobs, find professionals, and manage bookings.
+    6. Real-Time Communication: In-app messaging allows for clear, direct communication between clients and service providers.
+
+
+    `,
+    githubUrl: 'https://github.com/Cre8steveDev/joobz-mobile-app',
+  },
+
+  {
     projName: 'Naijarium Forum',
     id: 'naijarium',
     imgUrl:
@@ -27,7 +49,7 @@ const projectsdata = [
     id: 'salonix',
     imgUrl:
       'https://res.cloudinary.com/dg0qc5gkl/image/upload/v1721906144/Portfolio/salonix-big_v1jbrk.png',
-    liveUrl: 'https://github.com/Cre8steveDev',
+    liveUrl: 'https://youtu.be/OL0npzSNnI8',
     stacks: ['React Native', 'ExpressJS', 'MongoDB', 'JWT'],
     projDescription: `I built Solanix as a full-feature personal challenge project to improve my skills and knowledge as a MERN Stack Developer transitioning from the Web to building Cross-platform Native applications. 
     

@@ -2,6 +2,16 @@
 const myProjects = [
   {
     image:
+      'https://res.cloudinary.com/dg0qc5gkl/image/upload/v1726939243/joobz_mini_rkzn8f.png',
+    description:
+      'This project represents the culmination of a year-long Software Engineering Bootcamp with ALX Africa. It serves as a practical application of the full-stack development skills acquired during the program, showcasing proficiency in both frontend and backend technologies.',
+    tools: ['React Native', 'Expo', 'TypeScript', 'ExpressJS', 'MongoDB'],
+    name: 'Joobz Mobile App',
+    link: 'joobz',
+  },
+
+  {
+    image:
       'https://res.cloudinary.com/dg0qc5gkl/image/upload/v1721909948/Portfolio/naijarium_f249hd.png',
     description:
       'Naijarium is a Social Media Forum for Nigerians, designed to be a platform that promotes free speech without hate, tribalism, and bullying. It aims to provide a truly democratic social media space where users can express themselves freely.',

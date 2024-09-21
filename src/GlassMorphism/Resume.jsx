@@ -36,10 +36,7 @@ const Resume = () => {
             </p>
 
             {/* Download Button */}
-            <a
-              href="Resume_Stephen_Omoregie_FrontEnd_Developer.pdf"
-              download={true}
-            >
+            <a href="curriculum-vitae-stephen-omoregie.pdf" download={true}>
               <input
                 type="button"
                 value={'DOWNLOAD RESUME'}
